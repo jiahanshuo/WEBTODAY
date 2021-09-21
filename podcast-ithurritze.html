@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Web journal - Podcast</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout-exp.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+
+</head>
+
+<body class="pagepodcast">
+  <style>
+    .play {
+      background: url('images/svg/podcast_play.svg') no-repeat;
+    }
+
+    .pause {
+      background: url('images/svg/podcast_pause.svg') no-repeat;
+    }
+
+    .stop {
+      background: url('images/svg/podcast_stop.svg') no-repeat;
+    }
+
+    #music {
+      display: none;
+    }
+  </style>
+  <header>
+    <div class="main-title"><a href="accueil.html">Web Journal</a></div>
+
+    <div class="menuheader">
+      <hr>
+      <section class="container-menu2col">
+        <div class="menu"><a href="accueil.html">Nos articles & podcasts</a></div>
+        <div class="menu"><a href="a_propos.html">Qui sommes-nous ?</a></div>
+      </section>
+      <hr>
+    </div>
+  </header>
+
+  <div class="container-2col ">
+    <div class="texte_base-podcast">
+      <h1>"Étude de cas : radiooooo.com ; rassembler et digitaliser"</h1>
+      <div class="gros_legende">Par <a href="auteur-ithurritze.html">Liza ithurritze</a><br>Avec Thierry Roger</div>
+      <br>
+      <div class="legende">1<sup>er</sup> janvier 2021</div>
+    </div>
+    <div class="photo_podcast">
+      <figure class="ill_principale_article">
+        <img src="images/podcast-ithurritze.jpg" alt="IMG Grand Article (1fois)">
+      </figure>
+    </div>
+  </div>
+  <br>
+  <div class="container-1col-centre">
+
+      <audio id="music" controls="controls">
+        <source src="podcasts/1.mp3" /></audio>
+      <div id="audioplayer">
+        <div id="timeline">
+          <div id="playhead"></div>
+        </div>
+        <div class="stopplaybutton">
+        <button id="pButton" class="play" onclick="play()"></button>
+        <button id="stopButton" class="stop" onclick="stop()"></button>
+      </div>
+      </div>
+
+  </div>
+  <br>
+
+  <section class="container-8col">
+    <div class="container-2col52 contenusection">
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+          aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, <br>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+          ut
+          aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum
+          zzril delenit augue.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+          tincidunt
+          ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+          ess.
+        </p>
+        <div class="partagez_rs">
+          <div class="gros_legende">Partagez</div>
+          <div class="rs">
+            <figure class="ill_rs">
+              <a href=""><img src="images/facebook.png" alt="facebook"></a>
+            </figure>
+            <figure class="ill_rs">
+              <a href=""><img src="images/twitter.png" alt="twitter"></a>
+            </figure>
+            <figure class="ill_rs">
+              <a href=""><img src="images/instagram.png" alt="Instagram"></a>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h4>L'article lié</h4>
+        <hr>
+        <div class="article"><a href="article-ithurritze.html">
+            <figure class="ill_article_homepage">
+              <img src="images/article-ithurritze-petit.jpg" alt="IMG Grand Article (1fois)">
+            </figure>
+            <div class="infos">
+              <div class="legende">HTML/CSS</div>
+              <div class="legende">12MIN</div>
+            </div>
+            <h3>Radiooooo.com; rassembler et digitaliser</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p>
+          </a>
+          <div class="legende">Par <a href="auteur-ithurritze.html">Liza ithurritze</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+  <div class="container-2col17 contenusection ecritpar"><a href="auteur-ithurritze.html">
+    <figure class="ill_liste_auteur_petit">
+      <img src="images/auteur-ithurritze.jpg" alt="IMG Grand Article (1fois)">
+    </figure>
+    <div>
+      <div id="ecritpar_couleur" class="gros_legende">Écrit par Liza ithurritze</a></div>
+      <p>Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta tiumqui beat quiasperibus et exernam, cum venihilliae omnia</p>
+      <div id="ecritpar_couleur" class="legende">En savoir +</div>
+    </div>
+  </div>
+
+  <br>
+
+
+  <div class="titre_section">
+    <h2>Nos podcasts qui pourraient vous plaire</h2>
+    <hr>
+  </div>
+  <div class="container-2col contenusection">
+    <div class="podcast"><a href="podcast-lacour.html">
+        <div class="container-2col contenusection">
+          <div>
+            <div>
+              <h3>L’évolution des jeux dans les navigateurs web</h3><br>
+
+              <div class="legende">Avec Thierry Franck</div>
+            </div>
+          </div>
+          <figure class="ill_liste_podcast">
+            <img src="images/podcast-lacour.gif" alt="IMG Grand Article (1fois)">
+          </figure>
+        </div></a>
+
+      </div>
+      <div class="podcast"><a href="podcast-beziat.html">
+          <div class="container-2col contenusection">
+            <div>
+              <div>
+                <h3>Qu’est-ce q’un designer full stack ?</h3><br>
+
+                <div class="legende">Avec Thierry Franck</div>
+              </div>
+            </div>
+            <figure class="ill_liste_podcast">
+              <img src="images/podcast-beziat-petit.jpg" alt="IMG Grand Article (1fois)">
+            </figure>
+          </div></a>
+
+        </div>
+        <div class="podcast"><a href="podcast-boudin.html">
+            <div class="container-2col contenusection">
+              <div>
+                <div>
+                  <h3>L’intéractivité améliore-t-elle vraiment l’UX ?</h3><br>
+                  <div class="legende">Avec Thierry Franck</div>
+                </div>
+              </div>
+              <figure class="ill_liste_podcast">
+                <img src="images/podcast-boudin.jpg" alt="IMG Grand Article (1fois)">
+              </figure>
+            </div></a>
+
+          </div>
+
+          <div class="podcast"><a href="podcast-rossaro.html">
+              <div class="container-2col contenusection">
+                <div>
+                  <div>
+                    <h3>Comment le web a-t-il influencé le design?</h3><br>
+
+                    <div class="legende">Avec Thierry Franck</div>
+                  </div>
+                </div>
+                <figure class="ill_liste_podcast">
+                  <img src="images/podcast-rossaro.jpg" alt="IMG Grand Article (1fois)">
+                </figure>
+              </div></a>
+
+            </div>
+
+
+  </div>
+
+
+  <div class="titre_section">
+    <h2>Sinon...</h2>
+    <hr>
+  </div>
+  <div class="container-2col contenusection">
+    <div class="podcast"><a href="podcast-colongue.html">
+        <div class="container-2col contenusection">
+          <div>
+            <div>
+
+              <h3>Les limites du HTML / CSS</h3><br>
+              <div class="legende">Avec Thierry Franck</div>
+            </div>
+          </div>
+          <figure class="ill_liste_podcast">
+            <img src="images/podcast-colongue.jpg" alt="IMG Grand Article (1fois)">
+          </figure>
+        </div></a>
+
+      </div>
+
+
+
+
+      <div class="podcast"><a href="podcast-jia.html">
+          <div class="container-2col contenusection">
+            <div>
+              <div>
+
+                <h3>Teaching webdesign</h3><br>
+                <div class="legende">Avec Thierry Franck</div>
+              </div>
+            </div>
+            <figure class="ill_liste_podcast">
+              <img src="images/podcast-hanshuo.jpg" alt="IMG Grand Article (1fois)">
+            </figure>
+          </div></a>
+
+        </div>
+
+        <div class="podcast"><a href="podcast-garnier.html">
+            <div class="container-2col contenusection">
+              <div>
+                <div>
+                  <h3>Outils de prototypage & développement web</h3><br>
+
+                  <div class="legende">Avec Thierry Franck</div>
+                </div>
+              </div>
+              <figure class="ill_liste_podcast">
+                <img src="images/podcast-garnier.jpg" alt="IMG Grand Article (1fois)">
+              </figure>
+            </div></a>
+
+          </div>
+
+          <div class="podcast"><a href="podcast-faiz.html">
+              <div class="container-2col contenusection">
+                <div>
+                  <div>
+                    <h3>Les designs systems</h3><br>
+
+                    <div class="legende">Avec Thierry Franck</div>
+                  </div>
+                </div>
+                <figure class="ill_liste_podcast">
+                  <img src="images/podcast-faiz.jpg" alt="IMG Grand Article (1fois)">
+                </figure>
+              </div></a>
+
+            </div>
+
+            <div class="podcast"><a href="podcast-goussard.html">
+                <div class="container-2col contenusection">
+                  <div>
+                    <div>
+                      <h3>Le web et la pollution numérique</h3><br>
+
+                      <div class="legende">Avec Thierry Franck</div>
+                    </div>
+                  </div>
+                  <figure class="ill_liste_podcast">
+                    <img src="images/podcast-goussard.jpg" alt="IMG Grand Article (1fois)">
+                  </figure>
+                </div></a>
+
+              </div>
+              <div class="podcast"><a href="podcast-janocka.html">
+                  <div class="container-2col contenusection">
+                    <div>
+                      <div>
+
+                        <h3>Animer des illustrations dans le web</h3><br>
+
+                        <div class="legende">Avec Thierry Franck</div>
+                      </div>
+                    </div>
+                    <figure class="ill_liste_podcast">
+                      <img src="images/podcast-janocka.jpg" alt="IMG Grand Article (1fois)">
+                    </figure>
+                  </div></a>
+
+                </div>
+
+  </div>
+  <footer>
+    <hr><br>
+    <div class="container-8col">
+      <div class="footergauche">
+        <div class="footer_rsx">Suivez-nous sur les réseaux sociaux</div>
+        <div class="rsx">
+          <figure class="ill_rs">
+            <img src="images/facebook.png" alt="Twitter">
+          </figure>
+
+          <figure class="ill_rs">
+            <img src="images/twitter.png" alt="Instagram">
+          </figure>
+
+          <figure class="ill_rs">
+            <img src="images/instagram.png" alt="Facebook">
+          </figure>
+
+        </div>
+      </div>
+      <div class="footerdroite">
+        <div class="footer_infos"><a href="a_propos.html">Contact</a></div>
+        <div class="footer_infos">FAQ</div>
+        <div class="footer_infos">Mentions légales</div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+      var music = document.getElementById('music'); // id for audio element
+      var duration; // Duration of audio clip
+      var pButton = document.getElementById('pButton');
+      var stopButton = document.getElementById('stopButton'); // play button
+      var playhead = document.getElementById('playhead'); // playhead
+      var timeline = document.getElementById('timeline'); // timeline
+
+      // timeline width adjusted for playhead
+      var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+
+      // play button event listenter
+      pButton.addEventListener("click", play);
+      stopButton.addEventListener("click", stop);
+
+      // timeupdate event listener
+      music.addEventListener("timeupdate", timeUpdate, false);
+
+      // makes timeline clickable
+      timeline.addEventListener("click", function(event) {
+        moveplayhead(event);
+        music.currentTime = duration * clickPercent(event);
+      }, false);
+
+      // returns click as decimal (.77) of the total timelineWidth
+      function clickPercent(event) {
+        return (event.clientX - getPosition(timeline)) / timelineWidth;
+
+      }
+
+      // makes playhead draggable
+      playhead.addEventListener('mousedown', mouseDown, false);
+      window.addEventListener('mouseup', mouseUp, false);
+
+      // Boolean value so that audio position is updated only when the playhead is released
+      var onplayhead = false;
+
+      // mouseDown EventListener
+      function mouseDown() {
+        onplayhead = true;
+        window.addEventListener('mousemove', moveplayhead, true);
+        music.removeEventListener('timeupdate', timeUpdate, false);
+      }
+
+      // mouseUp EventListener
+      // getting input from all mouse clicks
+      function mouseUp(event) {
+        if (onplayhead == true) {
+          moveplayhead(event);
+          window.removeEventListener('mousemove', moveplayhead, true);
+          // change current time
+          music.currentTime = duration * clickPercent(event);
+          music.addEventListener('timeupdate', timeUpdate, false);
+        }
+        onplayhead = false;
+      }
+      // mousemove EventListener
+      // Moves playhead as user drags
+      function moveplayhead(event) {
+        var newMargLeft = event.clientX - getPosition(timeline);
+
+        if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+          playhead.style.marginLeft = newMargLeft + "px";
+        }
+        if (newMargLeft < 0) {
+          playhead.style.marginLeft = "0px";
+        }
+        if (newMargLeft > timelineWidth) {
+          playhead.style.marginLeft = timelineWidth + "px";
+        }
+      }
+
+      // timeUpdate
+      // Synchronizes playhead position with current point in audio
+      function timeUpdate() {
+        var playPercent = timelineWidth * (music.currentTime / duration);
+        playhead.style.marginLeft = playPercent + "px";
+        if (music.currentTime == duration) {
+          pButton.className = "";
+          pButton.className = "play";
+        }
+      }
+
+      //Play and Pause
+      function play() {
+        // start music
+        if (music.paused) {
+          music.play();
+          // remove play, add pause
+          pButton.className = "";
+          pButton.className = "pause";
+        } else { // pause music
+          music.pause();
+          // remove pause, add play
+          pButton.className = "";
+          pButton.className = "play";
+        }
+      }
+
+      function stop() {
+        music.pause();
+        music.currentTime = 0;
+        pButton.className = "play";
+      };
+
+
+      // Gets audio file duration
+      music.addEventListener("canplaythrough", function() {
+        duration = music.duration;
+      }, false);
+
+      // getPosition
+      // Returns elements left position relative to top-left of viewport
+      function getPosition(el) {
+        return el.getBoundingClientRect().left;
+      }
+
+      /* DOMContentLoaded*/
+    });
+  </script>
+</body>
+
+</html>
