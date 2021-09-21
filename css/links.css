@@ -1,0 +1,6 @@
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: var(--text-color-normal); }
+a:hover {
+  color: var(--text-electric-blue); }

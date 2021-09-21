@@ -1,0 +1,368 @@
+/*Test____________________*/
+.podcasttest{
+	grid-column: 1 / 2;
+
+}
+
+
+
+/*Accueil2____________________*/
+.grid-accueil{
+	padding-top: 8em;
+	padding-bottom: 6em;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: auto;
+	grid-column: 1 / 7;
+	column-gap: 45px;
+	grid-auto-rows: minmax(auto, auto);
+	grid-template-areas:
+    "podcast1 podcast2 podcast2 "
+    "podcast3 podcast4 podcast4"
+    "podcast5 podcast6 podcast7"
+		"podcast8 podcast9 podcast10";
+}
+
+.item-podcast1 {
+  grid-area: podcast1;
+}
+.item-podcast2 {
+  grid-area: podcast2;
+}
+.item-podcast3 {
+  grid-area: podcast3;
+}
+.item-podcast4 {
+  grid-area: podcast4;
+}
+.item-podcast5 {
+  grid-area: podcast5;
+}
+.item-podcast6 {
+  grid-area: podcast6;
+}
+.item-podcast7 {
+  grid-area: podcast7;
+}
+.item-podcast8 {
+  grid-area: podcast8;
+}
+.item-podcast9 {
+  grid-area: podcast9;
+}
+.item-podcast10 {
+  grid-area: podcast10;
+}
+.quisommesnous_contenu figure{
+	grid-column: 1 / 5;
+}
+.quisommesnous_contenu p{
+	grid-column: 5 / 9;
+}
+
+
+
+/*grid-container____________________________________________*/
+.grid-container {
+	max-width: var(--grid-max-width);
+	margin-bottom: 50px;
+	margin: 0 auto;
+	padding: 0;
+	display: grid;
+	grid-gap: 45px;
+	grid-template-columns: repeat(8, 1fr);
+}
+
+
+
+.video{
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+.photo_podcast{
+	grid-column-start: 5;
+	grid-column-end: 9;
+}
+
+.texte_base-podcast{
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.pps{
+	grid-column-start: 3;
+	grid-column-end: 7;
+}
+.pps_petit{
+	grid-column-start: 5;
+	grid-column-end: 9;
+}
+.pps_moyen{
+	grid-column-start: 7;
+	grid-column-end: 9;
+}
+.timeline{
+	grid-column-start: 2;
+	grid-column-end: 8;
+}
+.main-title {
+	grid-column-start: 3;
+	grid-column-end: 7;
+}
+.podcast_lecture{
+	grid-column-start: 2;
+	grid-column-end: 8;
+}
+.filtres ul {
+	margin-top: 32px;
+	height: 18px;
+	display: flex;
+	justify-content: space-evenly;
+	grid-column-start: 2;
+	grid-column-end: 8;
+	background-color: yellow;
+}
+
+
+
+
+
+/*header-____________________________________________*/
+
+.menu-items{
+	align-items: center;
+	text-align: center;
+	margin-left: 33.5%;
+	margin-right: 33.5%;
+
+}
+.rechercher{
+	grid-column-start: 7;
+	grid-column-end: 9;
+
+}
+.menu{
+
+	text-align: center;
+}
+
+.ecritpar_text{
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+.ecritpar_avatar{
+	grid-column-start: 1;
+	grid-column-start: 2;
+}
+.rsx_footer{
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+.footer_info{
+	grid-column-start: 6;
+	grid-column-end: 9	;
+}
+.photo_podcast_petit{
+		grid-column-start: 6;
+}
+.podcast_liste_alignement{
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+
+.ill_liste_article{
+	grid-column-start: 5;
+	grid-column-end: 9;
+}
+.ill_liste_podcast{
+	grid-column-start: 5;
+	grid-column-end: 9;
+}
+.ill_liste_podcast{
+	grid-column-start: 6;
+	grid-column-end: 9;
+}
+.contenu_apropos p{
+	grid-column-start: 1;
+	grid-column-end: 7;
+}
+body{
+	grid-column-start: 1;
+	grid-column-end: 8;
+}
+.auteur{
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.infos_contact{
+	grid-column-start: 6;
+	grid-column-end: 9;
+}
+
+
+.auteur{
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.article_base{
+	grid-column-start: 1;
+	grid-column-end: 9;
+}
+
+
+.article_liste{
+	grid-column-start: 1;
+	grid-column-end: 3;/*marche pas*/
+}
+.apropos_base{
+	grid-column-start: 1;
+	grid-column-end: 8;
+}
+
+
+.auteur{
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+/*autres sites____________________________________________*/
+.autresite_liste-Audrey{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.autresite_liste-Axelle{
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+.autresite_liste-Melanie{
+	grid-column-start: 5;
+	grid-column-end: 7;
+}
+.autresite_liste-Emma{
+	grid-column-start: 7;
+	grid-column-end: 9;
+}
+.autresite_liste-Hanshuo{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.autresite_liste-Pauline{
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+.autresite_liste-Liza{
+	grid-column-start: 5;
+	grid-column-end: 7;
+}
+.autresite_liste-Jeremy{
+	grid-column-start: 7;
+	grid-column-end: 9;
+}
+
+.autresite_liste-Clotilde{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.autresite_liste-Fanny{
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+.autresite_liste-Leila{
+	grid-column-start: 5;
+	grid-column-end: 7;
+}
+
+/*liste articles suggestions*/
+.article1_liste{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.article2_liste{
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+.article3_liste{
+	grid-column-start: 5;
+	grid-column-end: 7;
+}
+.article4_liste{
+	grid-column-start: 7;
+	grid-column-end: 9;
+}
+.colonne_droite{
+	grid-column-start: 6;
+	grid-column-end: 9;
+}
+.colonne_droite_2{
+	grid-column-start: 7;
+	grid-column-end: 9;
+}
+.colonne_droite_accueil{
+	grid-column-start: 7;
+	grid-column-end: 9;
+	display: block;
+	padding-top: 8em;
+}
+
+
+/*auteur*/
+
+.auteur_liste{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.auteur1_liste{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.auteur2_liste{
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+.auteur3_liste{
+	grid-column-start: 5;
+	grid-column-end: 7;
+}
+.auteur4_liste{
+	grid-column-start: 7;
+	grid-column-end: 9;
+}
+.contenu_auteur{
+	grid-column-start: 2;
+	grid-column-end: 6;
+}
+.version_liste{
+	grid-column-start: 6;
+	grid-column-end: 9;
+}
+.article_auteur{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+
+/*article*/
+.contenu_article{
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+.contenu_podcast{	grid-column-start: 1;
+	grid-column-end: 7;
+
+	}
+/*podcasts________________________________________*/
+.podcast1{
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+.podcast2{
+	grid-column-start: 5;
+	grid-column-end: 9;}
+.ecritpar_avatar{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.ecritpar_text{
+	grid-column-start: 3;
+	grid-column-end: 9;
+}

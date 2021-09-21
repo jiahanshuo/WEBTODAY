@@ -1,0 +1,151 @@
+
+figure{
+  margin: 0;
+  padding: 0;
+}
+img {
+ width : 100%;
+ margin: 0;
+ padding: 0;/*a verif les css pour trouver où ya ca appliqué pas comme on veut*/
+}
+svg{
+  fill:var(--text-electric-blue);
+  color:var(--text-electric-blue);
+}
+
+.ill_principale_article {
+  max-width: 563px;
+  margin-left: 0;
+}
+
+.ill_liste_article{
+  max-width: 259px;
+
+}
+
+.ill_liste_podcast{
+  max-width: 259px;
+}
+
+.ill_liste_auteur{
+  max-width:259px;
+  padding-top: 1.5em;
+}
+
+.ill_article_homepage{
+max-width:563px;
+}
+.ill_rechercher{
+  max-width:16px;
+  margin-top:1px;
+  float: right;
+}
+.ill_liste_podcast_petit{
+  max-width:107px;
+}
+
+.ill_liste_auteur_petit{
+  max-width:107px;
+}
+
+.ill_rs{
+max-width:28px;
+margin: 0;
+}
+
+.ill_rs_footer{
+max-width:32px;
+margin-left: 0;
+
+}
+
+.ill_play{
+  max-width:20px;
+}
+
+.ill_video{
+  max-width:713px;
+}
+.video{
+    max-width:713px;
+}
+.ill_site{
+max-width:259px;
+padding-top: 2em;
+}
+
+.ill_logo{
+  max-width:527px;
+}
+
+.ill_recherche{
+max-width:16px;
+justify-content: right;
+}
+.pps_petit .podcast_play{
+  max-width:15px;
+}
+.pps_petit, .podcast_pause {
+  height:10px;
+}
+.pps_petit .podcast_stop{
+  height:15px;
+}
+
+.podcast_play{
+  max-width:27px;
+}
+
+.podcast_pause{
+  max-width:20.45px;
+}
+
+.podcast_stop{
+  max-width:26px;
+}
+
+.ill_version_site.jpg{
+  max-width: 563px;
+}
+.podcast_play_grand{
+  max-width:27px;
+}
+.ill_liste_podcast_accueil{
+	max-width: 107px;
+}
+
+.podcast_pause_grand{
+  max-width:20.45px;
+}
+
+.podcast_stop_grand{
+  max-width:26px;
+}
+
+.podcast_curseur{
+  max-width:24px;
+}
+
+.avatar{
+  max-width:55px;
+}
+.ill_close{
+  max-width: 34px;
+  margin: 0;
+  float: right;
+}
+
+.filtres .ill_close{
+  max-width: 11.45px;
+  margin: 0;
+  justify-content: right;
+  align-items: center;
+}
+
+
+.podcast_timeline{
+  max-width:866px;
+  background: rgba(2,14, 124, 0.7);
+  /*border-color: rgba(14, 2, 124, 0.7);
+  border: solid 2px;*/
+}

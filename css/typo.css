@@ -1,0 +1,281 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+font-family: 'Cako Thin';
+src:  url('fonts/cako/cako-thin.eot');
+src:  url('fonts/cako/cako-thin.otf') format('truetype'),
+      url('fonts/cako/cako-thin-webfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/cako/cako-thin-webfont.svg') format('svg'),
+      url('fonts/cako/cako-thin-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Cako Thin Italic';
+src:  url('fonts/cako/cako-thin-italic-webfont.eot');
+src:  url('fonts/cako/cako-thin-italic.otf') format('truetype'),
+      url('fonts/cako/cako-thin-italic-webfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/cako/cako-thin-italic-webfont.svg') format('svg'),
+      url('fonts/cako/cako-thin-italic-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Cako Regular';
+src:  url('fonts/cako_regular-webfont.eot');
+src:  url('fonts/cako/cako-regular.otf') format('truetype'),
+      url('fonts/cako_regular-webfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/cako_regular-webfont.svg') format('svg'),
+      url('fonts/cako_regular-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Lausanne';
+src:  url('fonts/lausanne-300-webfont.eot');
+src:  url('fonts/lausanne-01/Lausanne-300.otf') format('truetype'),
+      url('fonts/lausanne-300-webfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/lausanne-300-webfont.svg') format('svg'),
+      url('fonts/lausanne-300-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Lausanne Italic';
+src:  url('fonts/lausanne-300italic-webfont.eot');
+src:  url('fonts/lausanne-01/Lausanne-300Italic.otf') format('truetype'),
+      url('fonts/lausanne-300italic-webfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/lausanne-300italic-webfont.svg') format('svg'),
+      url('fonts/lausanne-300italic-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Ginto Nord Thin';
+src:  url('fonts/ginto-nord/ginto-nord-thin.eot');
+src:  url('fonts/ginto-nord/ginto-nord-thin.ttf') format('truetype'),
+      url('fonts/ginto-nord/ginto-nord-thin.eot?#iefix') format('embedded-opentype'),
+      url('fonts/ginto-nord/ginto-nord-thin.svg') format('svg'),
+      url('fonts/ginto-nord/ginto-nord-thin.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'gnh';
+src:  url('fonts/ginto-nord/ginto-nord-hairline.eot');
+src:  url('fonts/ginto-nord/ginto-nord-hairline.ttf') format('truetype'),
+      url('fonts/ginto-nord/ginto-nord-hairline.eot?#iefix') format('embedded-opentype'),
+      url('fonts/ginto-nord/ginto-nord-hairline.svg') format('svg'),
+      url('fonts/ginto-nord/ginto-nord-hairline.woff') format('woff'),
+      url('fonts/ginto-nord/ginto-nord-hairline.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Ginto Thin';
+src:  url('fonts/Ginto Thin.eot');
+src:  url('fonts/Ginto Thin.otf') format('truetype'),
+      url('fonts/Ginto Thin.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Ginto Thin.svg') format('svg'),
+      url('fonts/Ginto Thin.woff') format('woff'),
+      url('fonts/Ginto Thin.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Chomsky';
+src:  url('fonts/chomsky-webfont.eot');
+src:  url('fonts/Chomsky.otf') format('opentype'),
+      url('fonts/chomsky-webfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/chomsky-webfont.svg') format('svg'),
+      url('fonts/chomsky-webfont.woff') format('woff'),
+      url('fonts/chomsky-webfont.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+html {
+  font-size: 14px;
+  --grid-max-width: 1171px;
+  --main-title-font: 'Chomsky', sans-serif;
+  --h1-font: 'Cako Regular', sans-serif;
+  --h2-font: 'Cako Regular', sans-serif;
+  --h3-font: 'Cako Regular', sans-serif;
+  --h4-font: 'Cako Regular', sans-serif;
+  --p-font: 'Lausanne', sans-serif;
+  --exergue-font: 'Cako Thin', sans-serif;
+  --legende-font: 'Ginto Nord Thin', sans-serif;
+  --gros_legende-font: 'Ginto Nord Thin', sans-serif;
+  --gros_contact-font: 'Ginto Nord Thin', sans-serif;/*ne pas effacer malgré doublon*/
+  --menu-font: 'Ginto Thin', sans-serif;
+  --lien_autre_article-font: 'Cako Regular', sans-serif;
+  --footer-font: 'Lausanne', sans-serif;
+  --text-color-normal: #0E027C;
+  --text-electric-blue: #000CFF;
+  --background-color: #F3F0EC;
+  font-size: var(--base-font-size);
+  scroll-behavior: smooth;
+}
+
+strong{
+  font-weight: bolder;
+}
+body {
+  line-height: 1.6;
+  background-color: var(--background-color);;
+}
+
+/*couleurs des fonts*/
+p, h1, h2, h3, h4{
+  color: var(--text-color-normal);
+}
+
+
+/*h2, h3, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--title-font);
+  color: var(--text-color-normal);
+  } JE COMPRENDS PAS CA */
+
+/*famille corps et poids des fonts*/
+
+p {
+  font-family: var(--p-font);
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+
+h1 {
+  margin: 3rem 0rem  3rem 0rem;
+  font-family: var(--h1-font);
+  font-size: 7em;
+  line-height: 84px;
+  font-weight: normal;
+  text-align: center;
+
+}
+
+h2 {
+    font-family: var(--h2-font);
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: var(--h3-font);
+    font-size: 29px;
+    line-height: 35px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+ h4 {
+   font-family: var(--h4-font);
+   font-size: 19px;
+   line-height: 21px;
+   font-weight: normal;
+   margin: 0;
+  }
+
+/*small, .text_small {font-size: 0.667rem;}*/
+.main-title {
+    font-family: var(--main-title-font);
+    background: linear-gradient(90deg, #0E027C,20%,  #000CFF);
+    font-weight: normal;
+    font-size: 100px;
+    -webkit-background-clip:text;
+    color:transparent;
+    text-align: center;
+    line-height: 1em;
+
+
+    }
+.title-logo {
+    font-family: var(--title_logo-font);
+    background: linear-gradient(90deg, #0E027C, #000CFF);
+    font-weight: normal;
+    font-size: 100px;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.exergue{
+  font-family: var(--exergue-font);
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: normal;
+  color: var(--text-electric-blue);
+}
+
+.legende{
+  font-family: var(--legende-font);
+  font-size: 10px;
+  line-height: auto;
+  font-weight: normal;
+  color: var(--text-electric-blue);
+}
+
+.gros_legende{
+  font-family: var(--gros_contact-font);
+  font-size: 15px;
+  line-height: auto;
+  font-weight: normal;
+  color: var(--text-electric-blue);
+}
+
+.menu{
+  font-family: var(--menu-font);
+  font-size: 18px;
+  line-height: auto;
+  font-weight: normal;
+  text-transform: uppercase;
+  color:var(--text-color-normal);
+}
+
+.lien_autre_article{
+  font-family: var(--lien_autre_article-font);
+  font-size: 27px;
+  line-height: 40px;
+  font-weight: normal;
+  color: var(--text-electric-blue);
+}
+
+.footer_rsx{
+  font-family: var(--footer-font);
+  font-size: 14px;
+  line-height: auto;
+  font-weight: normal;
+  color:var(--text-color-normal);
+}
+.footer_infos{
+  font-family: var(--footer-font);
+  font-size: 16px;
+  line-height: auto;
+  font-weight: normal;
+  color:var(--text-color-normal);
+}
+
+.text_contact{
+  color: var(--text-electric-blue);
+}
+
+.text_perso_contact{
+  font-family: var(--gros_contact-font);
+  font-size: 21px;
+  line-height: auto;
+  font-weight: normal;
+  color: var(--text-color-normal);
+
+}
+#ecritpar_couleur{
+  color:var(--text-color-normal);
+}
+/*Si on les met (sachant que c'est des boutons)
+.filtres{
+  font-family: var(--legende-font);
+  text-transform: uppercase;
+  color:var(--text-color-normal);
+}*/

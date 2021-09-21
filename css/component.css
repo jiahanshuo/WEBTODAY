@@ -1,0 +1,443 @@
+header {
+  background-color: #F3F0EC;
+  height: 241px;
+  align-items: baseline;
+  padding-top: 7em;
+  height: auto;
+}
+#rsapropos{
+  justify-content: center;
+}
+#partagez{
+  padding-right: 20px;
+}
+.infos {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0em;
+  padding-bottom: 1em;
+}
+.menuheader{
+  padding-top: 7em;
+  padding-bottom: 2em;
+}
+.rechercher {
+  align-items: center;
+  height: 22px;
+  border: solid 1px #0E027C;
+  vertical-align: middle;
+  margin: 0;
+}
+.menu{
+  text-align: center;
+}
+form, .rsx {
+  display: flex;
+}
+footer{
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+
+
+.auteur_base {
+  display: flex;
+  align-items: center;
+}
+
+.footer_info {
+  display: block;
+}
+
+.rsx_footer {
+  display: block;
+}
+
+.podcast_lecture, .article_base {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article_base {
+  padding-bottom: 4em;
+  padding-top: 4em;
+}
+
+.liste_commentaires {
+  padding-top: 2em;
+  display: block;
+}
+
+.commentaire {
+  display: flex;
+}
+
+.colonne_droite {
+  display: block;
+}
+
+.commentaire p {
+  margin-left: 6%;
+}
+
+.apropos_base {
+  display: flex;
+  padding-bottom: 4em;
+  justify-content: space-between;
+  padding-top: 8em;
+}
+.apropos{
+  width: 100%;
+}
+.contenusection {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.texte_base-podcast, .texte_base {
+  text-align: center;
+}
+.ill_principale_article{
+  margin: 0 auto;
+}
+.ill_liste_podcast{
+
+}
+
+
+/*podcast-_____________________________*/
+.podcast_lecture {
+  padding-top: 1em;
+  padding-bottom: 4em;
+  justify-content: space-between;
+}
+
+.podcast_lecture_petit {
+  display: flex;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.podcast_liste {
+  align-items: flex-start;
+  margin-top: 5em;
+  display: flex;
+}
+
+.podcast_navigation {
+  display: block;
+  justify-content: center;
+  padding-top: 4em;
+}
+.podcasts-list{
+  display: block;
+
+}
+
+.podcast{
+  clear:left;
+}
+
+#ensavoirplus{
+  float: right;
+  padding-top: 2em;
+}
+.timeline {
+  height: 5px;
+  background-color: rgba(14, 2, 124, 0.25);
+  justify-content: center;
+  display: flex;
+}
+
+.photo_podcast {
+  padding-bottom: 5em;
+}
+
+.timeline_petit {
+  height: 3px;
+  background-color: rgba(14, 2, 124, 0.25);
+  width: 100%;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.timeline_moyen {
+  height: 4px;
+  background-color: rgba(14, 2, 124, 0.25);
+  width: 100%;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.podcast_base {
+  padding-bottom: 4em;
+  padding-top: 10em;
+}
+
+.pps {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.pps_petit {
+  display: flex;
+  float: right;
+}
+
+.pps_moyen {
+  display: flex;
+  float: right;
+}
+
+.avatar {
+  float: right;
+}
+
+#articlepodcast-auteur {
+  padding-top: 7em;
+}
+
+#saversion {
+  margin-top: 1.5em;
+}
+
+#text_contact {
+  padding-bottom: 1em;
+  color: var(--text-electric-blue);
+}
+
+#floatright {
+  float: right;
+}
+
+#commenter p {
+  color: var(--text-electric-blue);
+}
+
+#commenter {
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 4em;
+  border: 1px solid var(--text-color-normal);
+}
+
+.pps_petit .podcast_pause {
+  margin: 7px;
+}
+
+.pps_petit .podcast_play {
+  margin: 7px;
+  margin-left: 0;
+}
+
+.pps_petit .podcast_stop {
+  margin: 7px;
+  margin-right: 0;
+}
+
+.auteur1 figure {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.podcast_play, .podcast_pause {
+  margin: 8px;
+}
+
+.podcast_stop {
+  margin: 12px;
+  margin-right: 0;
+}
+
+.podcast_play_grand, .podcast_pause_grand, .podcast_stop_grand {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.article, .podcastauteur {
+  padding-bottom: 3em;
+}
+
+.article p {
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-top: 0.5px solid var(--text-electric-blue);
+}
+
+.ill_liste_auteur_petit {
+  padding-top: 25px;
+}
+
+#texteauteur, #textebase {
+  padding-top: 3em;
+}
+
+.rs {
+  display: flex;
+  align-items: center;
+}
+
+.ecritpar p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+.footer {
+  padding-top: 4em;
+}
+
+.ill_rs {
+  padding: 10px;
+  padding-left: 0;
+}
+
+.partagez_rs {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.filtres {
+  max-width: 107px;
+  height: 18px;
+  border: solid 1px #0E027C;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.contenu_filtres {
+  align-items: center;
+  display: flex;
+  justify-content: right;
+}
+
+#text_filtre {
+  text-align: center;
+}
+
+video{
+  max-width: 100%;
+
+}
+.titre_section, .autresite_liste, .auteur_liste {
+  display: block;
+}
+
+#exerguearticle {
+  padding-top: 1.5em;
+}
+
+#commentaire {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.titre_section {
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+.nospodcastsqui {
+  padding-top: 16em;
+}
+
+.version_liste {
+  display: block;
+}
+
+.lien_autre_article {
+  text-align: center;
+  padding: 2.5em;
+}
+
+.liste_moyen_podcast {
+  padding-top: 3em;
+  padding-bottom: 9em;
+}
+
+.podcast_liste_alignement_accueil {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*----------------popup version site*/
+.leftpopup{
+grid-column: 1 / 4;
+}
+.leftpopup h3{
+text-align: center;
+}
+.rightpopup{
+grid-column: 4 / 9;
+}
+.ecritparpopup{
+  display: flex;
+  align-items: center;
+  padding-bottom: 3em;
+}
+.ecritparpopup p{
+  padding-top: 25px;
+}
+      /*--JS*/
+
+.overlay{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index:1;
+  display:none;
+}
+#affichegoussard, #affichebeziat, #affichecolongue, #affichegarnier, #affichelacour, #affichefaiez, #affichejanocka, #affichegarnier, #afficherossaro, #afficheithurritz, #afficheboudin {
+  display: none;
+}
+
+.popup{
+padding: 5%;
+margin: 0 auto;
+width : 100%;
+background-color: #F3F0EC;
+border: 1px solid var(--text-color-normal);
+max-width: 1318px;
+overflow: scroll;
+position: relative;
+}
+
+.btnClose{
+  position:  absolute;
+  top:0;
+  right: 0;
+}
+
+#btnPopupgoussard, #btnPopupbeziat, #btnPopupcolongue, #btnPopuplacour, #btnPopupfaiez, #btnPopupjanocka, #btnPopupgarnier, #btnPopuprossaro, #btnPopupithurritz, #btnPopupboudin {
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 18px;
+  height:18px;
+  border: 1.5px solid var(--text-color-normal);
+  background-color: #F3F0EC;
+}
+
+.nav_versions{
+  display: flex;
+  justify-content: center;
+padding-top: 4em;
+
+}
+.contenupopup{
+}
