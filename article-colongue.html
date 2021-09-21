@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout-exp.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+
+</head>
+
+<body class="pageauteur">
+
+  <style>
+    .play {
+      background: url('images/svg/podcast_play.svg') no-repeat;
+    }
+
+    .pause {
+      background: url('images/svg/podcast_pause.svg') no-repeat;
+    }
+
+    .stop {
+      background: url('images/svg/podcast_stop.svg') no-repeat;
+    }
+
+    #music {
+      display: none;
+    }
+  </style>
+  <header>
+    <div class="main-title"><a href="accueil.html">Web Journal</a></div>
+    </div>
+    <div class="menuheader">
+      <hr>
+      <section class="container-menu2col">
+        <div class="menu"><a href="accueil.html">Nos articles & podcasts</a></div>
+        <div class="menu"><a href="a_propos.html">Qui sommes-nous ?</a></div>
+      </section>
+      <hr>
+    </div>
+  </header>
+
+  <div class="container-2col podcast_base">
+    <div class="texte_base">
+      <div class="infos">
+        <div class="gros_legende">HTML/CSS</div>
+        <div class="gros_legende">12MIN</div>
+      </div>
+      <h1>Les limites du HTML / CSS</h1>
+      <div class="gros_legende">Par <a href="auteur-colongue.html">Emma Colongue</a></div>
+
+      <div class="legende">1<sup>er</sup> janvier 2021</div>
+    </div>
+
+    <div>
+      <figure class="ill_principale_article">
+        <img src="images/article-colongue.jpg" alt="IMG Grand Article (1fois)">
+      </figure>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="container-2col53 contenusection">
+    <div>
+      <p class="contenu_article">
+        Le HTML et les feuilles de CSS sont deux langages informatiques indispensables à la création d’un site web. On résume souvent en disant que le HTML corresponds au « squelette » de la page et la CSS à la mise en page. Cependant ces deux langages présentent d’autres possibilités, avantages et inconvénients parfois peu connues, que cet article propose de découvrir.
+<br></br><br></br>
+HTML:
+<br></br>
+Présentation:
+<br></br>
+Le HTML est un langage inspiré du XML (Extensible Markup Language, généralement appelé XML, « langage de balisage extensible » en français) et qui repose sur le principe de balises imbriquées.
+En résumé, il sert à indiquer au navigateur (google chrome, firefox, safari …) comment afficher la page web.
+Comme le HTML fonctionne sur le principe de balises imbriquées, nous allons encadré notre texte par deux balises : La première pour indiquer le début et la deuxième pour indiquer la fin. Pour afficher du texte en HTML, bien souvent nous utilisons la balise servant à indiquer qu’il s’agit d’un paragraphe. Même pour n’écrire qu’une seule phrase, on utilise cette balise.
+<br></br>
+Pour faire simple, le HTML sert principalement à :
+Afficher un contenu (texte, image, …)
+Créer des liens hypertexte et relier les pages entre elles
+Structurer un document (titre, paragraphe …)
+Indiquez au navigateur ce qu’il doit afficher
+Bien indexer une page web dans les moteur de recherches (choix de balise, mot-clé …)
+Donner des informations au navigateur sur la gestion de la page (gestion du cache, rafraichissement …)
+Donner des informations au navigateur sur la page (titre, mot-clé, langue, pays, copyright …)
+Créer des formulaires web intéractifs
+
+
+
+<br></br><br></br>
+Les avantages du HTML:
+<br></br>
+Le principal avantage du HTML est donc sa simplicité relative. S’il s’apprend très vite, bien le maîtriser demande un peu plus de temps. Il est parfait pour les débutant car très rapidement il est facile de créer des pages web avec du texte, des images, des vidéos …
+Le HTML ne compte qu’une centaine (150) de balises.
+Un autre avantage du HTML est sa compatibilité.
+Lorsque vous codez une page en HTML, théoriquement, elle s’affichera de la même facon quelque soit le navigateur (firefox, opéra, internet explorer …), l’OS (windows, mac, linux …) et le support (pc, smartphone, tablette …).
+
+
+
+<br></br><br></br>
+Limites du html:
+<br></br>
+Le langage HTML ne prends en charge aucun évènements, mis à part le clic.
+<br></br>
+Il ne présente également aucune structures de contrôle algorithmiques (conditionnelles et itératives)
+<br></br>
+ Il s’agit d’un langage sans aucune logique de programmation procédurale (notion de sous-programmes, variables, opérateurs prédéfinis…)
+<br></br>
+Le langage HTML ne présente pas de possibilité d’interfaçage avec les bases de données
+<br></br>
+Il n’existe pas de mécanisme permettant de rendre le code source inaccessible pour l’utilisateur final (en HTML, pour pouvoir visualiser le code, il suffit d’utiliser l’option affichage code source du navigateur)
+<br></br>
+Cependant, le langage HTML est bien adapté pour la communication d'information non structuré entre homme et machine, mais il n'est pas utilisable pour le transfert d'information structuré de machine à machine. 
+
+<br></br><br></br>
+
+Les langages complémentaires au HTML:
+<br></br>
+D’autre langages, complémentaire au HTML, pourront être nécessaires pour réaliser certains projets. Il pourront-être soit directement intégré dans la page soit écris sur une autre page et relié à la page codé en HTML.
+<br></br>
+Parmi ces principaux langages, ont retrouve :
+<br></br>
+CSS : Le CSS, ou Cascading Style Sheet, sert à la mise en page. Il faut dissocier le contenu qui est codé en HTML et le design qui se fait en CSS. Il servira par exemple à indiquer la police de caractères, la couleur, l’arrière-plan …
+<br></br>
+Javascript : Le Javascript sert principalement à agir sur le comportement du navigateur. Avec ce langage, il est possible par exemple afficher une fenêtre d’alerte lorsqu’on clique sur un lien, de déclencher une animation, mettre le site web dans les favoris, imprimer la page …
+<br></br>
+PHP : Le PHP est un langage très complet avec de nombreuse fonctions. Il permet de faire le lien entre un site et une base de données, d’afficher son contenu de façon dynamique, de gérer des variables, de traiter des formulaires …
+<br></br>
+SQL : SQL est le langage pour agir sur des base de données. Si le PHP fais le lien entre elles et le site web, il faudra coder en SQL pour effectuer des actions (ajouter, supprimer, modifier, trier, rechercher …)  sur celles-ci.
+<br></br><br></br>
+
+
+Autres utilités du HTML:
+
+<br></br><br></br>
+HTML pour le print
+<br></br>
+Depuis quelques années, de nombreuses personnes se sont demandées si la mise en page web (HTML/CSS) ne pouvait pas permettre une mise en page également pour le print (médias imprimés).
+C’est par exemple le cas de Ken Wittebrood, étudiant en 2016, s'est demandé si HTML, CSS et JavaScript pouvaient être mis en oeuvre pour la livraison de fichiers PDF conformes aux exigences d'un flux de production graphique.
+<br></br>
+Pour son mémoire, Ken Wittebrood a combiné deux passions : une prédilection pour le secteur graphique et un faible pour les technologies Web:
+<br></br>
+« Lorsque l'on parle de HTML et de CSS, on ne pense pas d'emblée à l'imprimé. Le secteur graphique a toutefois évolué à un rythme soutenu ces dernières années. Le terme " crossmédia " est désormais omniprésent. Les entreprises de nos jours doivent indéniablement être présentes sur le Web, mais il ne faut pas non plus sous-estimer la puissance du médium imprimé. La communication crossmédia leur impose toutefois un surplus de travail. Le contenu doit être publié sur le Web et par ailleurs paraître aussi sous forme de catalogue, de prospectus ou de livre. Les webdesigners et/ou développeurs se chargent du site en ligne, ce pour quoi ils utilisent HTML et CSS. Le même contenu est ensuite encore une fois mis en forme par un graphiste ou par le département prépresse. Ceux-ci livrent un fichier PDF à l'imprimeur, qui peut alors se mettre au travail.
+<br></br>
+L'objectif de mon mémoire de fin de baccalauréat était de vérifier si ce processus ne pouvait pas être simplifié. La question centrale de ma thèse était en substance la suivante : " Est-il possible d'utiliser HTML, CSS et JavaScript pour créer des fichiers PDF conformes aux exigences d'un flux de production graphique ? ". 
+<br></br>
+Pour dépasser les limites d'HTML et CSS, j'ai eu recours à pdfChip, de callas software. Cette application en ligne de commande permet de convertir des fichiers HTML en PDF de haute qualité, prêts à imprimer. Les programmeurs de chez callas ont, pour ainsi dire, encore étendu HTML, CSS et JavaScript, et ils ont même créé des éléments HTML et des attributs CSS supplémentaires, qui peuvent servir spécifiquement pour un flux de production graphique. Des propriétés comme les couleurs CMJN, les métadonnées, les formats de page et les espaces colorimétriques étendus deviennent possibles avec pdfChip.
+<br></br>
+En examinant de plus près ces éléments HTML et attributs CSS supplémentaires, je souhaitais apporter une réponse à des questions comme : " Comment fonctionne pdfChip ? ", " Quelles sont les possibilités ? " et " Quelles sont les barrières éventuelles de pdfChip ? ". Après l'étude de la littérature pour la recherche théorique, j'ai aussi développé quelques cas pratiques. Parmi ceux-ci, une application Web dans laquelle l'utilisateur peut introduire des données. Sur la base de ces données, le modèle HTML est complété et une imposition est générée automatiquement, laquelle peut être téléchargée comme fichier PDF/X prêt à imprimer. »
+<br></br>
+En conclusion, HTML, CSS et JavaScript, avec l'aide de pdfChip et des extensions spécifiques de HTML, CSS et JavaScript, peuvent être utilisés pour créer des fichiers PDF/X corrects.
+Tous les éléments nécessaires pour lesquels HTML et CSS doivent déclarer forfait en vue d'une utilisation dans un environnement graphique peuvent être gérés avec pdfChip. Des choses comme les couleurs CMJN, les tons Pantone, les profils colorimétriques et les intentions de rendu sont prises en charge, ce qui rend possible la création de fichiers PDF/X corrects avec HTML et CSS.
+<br></br>
+Selon Ken, l'opérateur prépresse moderne et le graphiste seront à l'avenir de plus en plus confrontés à la communication crossmédia. Les entreprises veulent pouvoir travailler à partir d'un codebase unique, aussi bien pour le Web que pour l’imprimé. PdfChip apporte une solution adéquate. Le contenu destiné à paraître aussi bien en ligne que sur papier peut être créé ainsi à la fois plus rapidement et de manière plus efficace.
+
+<br></br><br></br>
+Formulaires en HTML - < input >
+<br></br>
+Il est possible de créer un contrôle intéractif dans un formulaire web en HTML, via l'élément HTML <input> qui permet à l'utilisateur de saisir des données. La balise <input> spécifie un champ de saisie où l'utilisateur peut entrer des données. L'élément <input> est l'élément le plus important du formulaire. Les saisies possibles et le comportement de l'élément <input> dépend fortement de la valeur indiquée dans son attribut type. L'attribut "type" de l'élément de saisie peut être de différents types, ce qui définit le champ d'information. Par exemple, <input type="text" name="name"> donne un champ de texte.
+Il existe 9 « input type » initiaux, qui sont « text », « password », « submit », « reset », « radio », « checkbox », « button », « file », « image ».
+Avec l’arrivée d’HTML5, 10 nouveaux « input type » ont été ajouté, tels que « color », « date », « datetime-local », « email », « month », « number », « url », « week », « search », « tel ».
+<br></br>
+Les éléments <input type> simplifient la saisie de valeurs dans un formulaire. Lorsqu'on crée un tel contrôle, des mécanismes de validation automatiques sont appliqués afin de vérifier que le texte saisi est bien au format demandé (chiffres, lettres, date…) Généralement un contrôle de saisie numérique incluera des boutons avec des curseurs pour augmenter/réduire la valeur.
+
+
+
+
+<br></br><br></br>
+CSS:
+
+<br></br>
+Présentation:
+<br></br>
+Le CSS a été créé en 1996, soit 5 ans après le HTML. Les sigles « CSS » sont l’abréviation de « Cascading StyleSheets » ou « feuilles de styles en cascade » en français.
+Le CSS vient résoudre un problème bien différent du HTML : en effet, le HTML sert à définir les différents éléments d’une page, à leur donner du sens. Le CSS, lui, va servir à mettre en forme les différents contenus définis par le HTML en leur appliquant des styles.
+<br></br>
+Le HTML va donc créer la structure des pages tandis que le CSS va nous permettre de modifier l’apparence des contenus de la page. On va ainsi par exemple pouvoir définir la taille, la couleur ou l’alignement de certains contenus HTML et notamment en l’occurrence de certains textes dans notre page. Pour que cela fonctionne, il faut appliquer le CSS au document HTML, sinon la mise en forme décrite dans le fichier CSS n'affectera pas l'affichage de la page HTML dans la navigateur.
+
+<br></br><br></br>
+Anatomie d'une règle CSS
+<br></br>
+Cette structure appelle à un ensemble de règles.
+Les différentes parties se nomment :
+<br></br>
+Sélecteur :
+c'est le nom de l'élément HTML situé au début de l'ensemble de règles. Il permet de sélectionner les éléments sur lesquels appliquer le style souhaité (en l'occurence, les éléments p). Pour mettre en forme un élément différent, il suffit de changer le sélecteur.
+<br></br>
+Déclaration :
+c'est une règle simple comme « color: red »; qui détermine les propriétés de l'élément que l'on veut mettre en forme.
+<br></br>
+Propriétés :
+les différentes façons dont on peut mettre en forme un élément HTML (dans ce cas, color est une propriété des éléments p ). En CSS, vous choisissez les différentes propriétés que vous voulez utiliser dans une règle CSS.
+<br></br>
+Valeur de la propriété :
+à droite de la propriété, après les deux points, on a la valeur de la propriété. Celle-ci permet de choisir une mise en forme parmi d'autres pour une propriété donnée (par exemple, il y a d'autres couleurs que red pour la propriété color).
+<br></br>
+Les autres éléments importants de la syntaxe sont :
+chaque ensemble de règles, à l'exception du sélecteur, doit être entre accolades ({}).
+pour chaque déclaration, il faut utiliser deux points (:) pour séparer la propriété de ses valeurs.
+pour chaque ensemble de règles, il faut utiliser un point-virgule (;) pour séparer les déclarations entre elles.
+Ainsi, si on veut modifier plusieurs propriétés d'un coup, on peut utiliser plusieurs déclarations dans une seule règle en les séparant par des points-virgules.
+
+
+<br></br><br></br>
+Les animations en CSS:
+<br></br>
+Les animations CSS permettent de créer des transitions entre deux états de mise en forme. Une animation est décrite par deux choses : des propriétés propres à l'animation d'une part et un ensemble d'étapes (keyframes) qui indiquent l'état initial, final et éventuellement des états intermédiaires d'autre part.
+<br></br>
+
+Trois avantages permettent de distinguer les animations CSS des techniques d'animations utilisant JavaScript :
+<br></br>
+Il est assez simple d’obtenir des animations simples sans avoir à connaître JavaScript.
+<br></br>
+Les animations s'exécuteront correctement même lorsque le système est soumis à une charge modérée. Il est possible que des animations JavaScript s'exécutent lentement si elles sont mal décrites. Dans le cadre des animations CSS, le moteur de rendu peut utiliser certaines techniques (comme le frame-skipping) afin que le résultat obtenu soit aussi fluide que possible.
+<br></br>
+En laissant le contrôle de l'animation au navigateur, celui-ci peut optimiser les performances et l'efficacité du système, par exemple en réduisant la fréquence de mise à jour des animations qui sont exécutées dans des onglets qui ne sont pas visibles à l'écran.
+<br></br>
+De manière similaire aux transitions, toutes les propriétés ne vont pas pouvoir être animées. Cependant, la grande majorité des propriétés courantes vont pouvoir l’être.
+<br></br>
+Pour définir une animation en CSS il faut utiliser les propriétés de type animation-* ou la notation raccourcie animation avec une règle @keyframes qui va contenir les propriétés à animer et leurs valeurs.
+<br></br><br></br>
+Différence entre animations et transitions en CSS:
+<br></br>
+Les transitions et les animations permettent toutes les deux de modifier la valeur de propriétés de manière progressive, au cours du temps. Cependant, la façon dont vont procéder les transitions et les animations pour arriver à cela ne va pas être la même.
+<br></br>
+La grande différence entre les transitions et les animations en CSS est que les animations laissent à la fois une plus grande liberté et un plus grand contrôle sur le déclenchement et la progression du changement de valeur des propriétés animées.
+<br></br>
+En effet, dans le cas d’une transition, il n’est possible que de préciser une valeur de départ et une valeur d’arrivée pour les propriétés pour lesquelles la transition est souhaitée et il n’y a pas véritablement de contrôle précis sur la transition en soi tandis que dans le cas d’une animation il est possible d’indiquer de manière explicite comment la « transition » entre les différentes valeurs doit se passer et pouvoir préciser différentes valeurs intermédiaires.
+<br></br>
+En cela, les animations offrent davantage de contrôle sur le changement de valeurs des propriétés concernées par l’animation puisqu’il va être possible de contrôler ce changement de valeur dans son ensemble. Elles vont donc notre choix de prédilection lorsqu’on voudra créer des effets plus complexes ou précis.
+<br></br>
+De plus, il n’est plus nécessaire d’attendre un changement d’état d’un élément pour modifier la valeur d’une de ses propriétés avec les animations. En effet, il deviens possible de lancer une animation dès le chargement de la page ou selon un autre évènement.
+<br></br>
+Afin de mieux se rendre compte des animations et transitions possibles à effectuer en CSS, les deux liens suivants présentent de nombreux exemples visuels et intéractifs:
+https://www.web-eau.net/blog/15-animations-css-vraiment-bluffantes
+https://graphiste.com/blog/animations-css
+
+<br></br><br></br>
+Variable Webfont:
+<br></br>
+Comme cité plus haut, les feuilles de CSS permettent d’appliquer une typographie choisie sur un bloc texte, ainsi que d’agir sur ses propriétés de style (graisse, pente…)
+<br></br>
+Les polices standard ou polices statiques:
+Auparavant, une police de caractères était représentées par différents fichiers pour les différentes fontes. Aussi, il y avait par exemple différents fichiers pour 'Roboto Regular', 'Roboto Bold' et 'Roboto Bold Italic' et on pouvait avoir 20 à 30 fichiers distincts pour représenter l'intégralité d'une police.
+Avec un tel scénario et pour utiliser une police de façon classique sur un site, il fallait au moins quatre fichier pour les différents styles : normal, italique, gras et gras-italique. Si on souhaitait ajouter un autre niveau de graisse (par exemple une fonte plus légère pour les légendes), il fallait rajouter un fichier. Sur le réseau, cela se traduisait par d'autres requêtes HTTP et plus de données téléchargées (environ 20Ko pour chaque fichier).
+<br></br>
+Les polices variables (variable webfont):
+Avec une police variable, toutes ces combinaisons de style et de graisse sont contenues dans un seul fichier. Il y a donc un fichier plus gros qu'un fichier de police classique mais dont la taille est inférieure ou proche de celle des 4 fichiers anciennement chargés pour la police principale d'un site. L'avantage d'une police variable est qu’il est possible accéder à l'intégralité des corps, graisses et italiques sans être plus contraint par ceux du ou des fichiers chargés séparément.
+Cela permet d'utiliser des techniques typographiques classiques pour avoir des niveaux de titre avec différents corps, d'utiliser une fonte plus étroite lorsqu'il y a plus de données à afficher, etc.
+<br></br>
+Le concept clé des polices variables est celui d'axe de variation qui décrit l'intervalle autorisé pour faire varier un aspect donné d'une police.
+Ainsi, l'axe de la graisse décrit l'étendue entre les caractères les plus fins et les plus gras qui puissent être ; l'axe de la largeur parcourt l'étroitesse ou la largeur de la police ; l'axe italique décrit si des formes italiques sont présentes, etc. Un axe peut être un intervalle ou un choix binaire. Ainsi, la graisse pourra varier entre 1 et 999 tandis que l'italique pourrait être uniquement activable ou désactivable (1 ou 0 respectivement).
+<br></br>
+Comme indiqué dans la spécification, deux types d'axe existent :
+les axes enregistrés et les axes spécifiques (custom axes) :
+<br></br>
+Les axes enregistrés sont ceux que l'on rencontre le plus souvent et qui ont donc été standardisés dans la spécification. À l'heure actuelle, il existe 5 axes enregistrés : le corps, la largeur, la pente, l'italique et la taille optique. Chacun de ces axes possède un attribut CSS correspondant. 
+Les axes spécifiques peuvent être n'importe quel axe défini par le concepteur de la police. Chaque axe doit simplement être défini par une étiquette avec quatre lettres qui permettront de l'identifier. Ces étiquettes pourront être utilisées dans le code CSS pour indiquer quel niveau de variation utiliser.
+<br></br>
+Il est possible de trouver et essayer les variables font sur le site « https://v-fonts.com/", afin de se rendre compte de la flexibilité que permettent les variables fonts.
+<br></br><br></br><br></br>
+
+
+SOURCES:
+http://www.texteur.net/usages/css.html
+https://nouvelles-graphiques.levif.be/nouvelles-graphiques/les-possibilites-d-html-et-de-css-pour-l-imprime/article-normal-546971.html?cookie_check=1600589196
+https://apcpedagogie.com/les-limites-du-langage-html/
+http://41mag.fr/a-quoi-sert-le-html5-que-peut-on-faire-avec-quels-sont-ses-limites.html
+https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Fonts/Guide_polices_variables
+http://www.texteur.net/usages/css.html)
+https://nouvelles-graphiques.levif.be/nouvelles-graphiques/les-possibilites-d-html-et-de-css-pour-l-imprime/article-normal-546971.html?cookie_check=1600589196
+
+
+      </p>
+    </div>
+    <div>
+
+
+
+      <div>
+        <div><h2>Son podcast</h2>
+        <hr></div>
+        <div class="podcast"><a href="podcast-colongue.html">
+            <div class="container-2col contenusection">
+              <div>
+                <div>
+                  <h3>Les limites du HTML/CSS</h3><br>
+                  <div class="legende">Avec Thierry Franck</div>
+                </div>
+              </div>
+              <figure class="ill_liste_podcast">
+                <img src="images/podcast-colongue.jpg" alt="IMG Grand Article (1fois)">
+              </figure>
+            </div></a>
+            <div>
+              <audio id="music" controls="controls">
+                <source src="podcasts/1.mp3" /></audio>
+              <div id="audioplayer">
+                <div id="timeline">
+                  <div id="playhead"></div>  </div>
+              <div class="stopplaybutton">
+                <button id="pButton" class="play" onclick="play()"></button>
+                <button id="stopButton" class="stop" onclick="stop()"></button>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div id="exerguearticle" class="exergue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+      </div>
+      <div id="floatright" class="partagez_rs">
+        <div class="gros_legende" id="partagez">Partagez</div>
+        <div class="rs">
+          <figure class="ill_rs">
+            <a href=""><img src="images/facebook.png" alt="facebook"></a>
+          </figure>
+          <figure class="ill_rs">
+            <a href=""><img src="images/twitter.png" alt="twitter"></a>
+          </figure>
+          <figure class="ill_rs">
+            <a href=""><img src="images/instagram.png" alt="Instagram"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <br>
+  <hr>
+
+  <div class="container-2col17 contenusection ecritpar"><a href="auteur-colongue.html">
+    <figure class="ill_liste_auteur_petit">
+      <img src="images/auteur-colongue.jpg" alt="IMG Grand Article (1fois)">
+    </figure>
+    <div>
+      <div id="ecritpar_couleur" class="gros_legende">Écrit par Emma Colongue</a></div>
+      <p>Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta tiumqui beat quiasperibus et exernam, cum venihilliae omnia</p>
+      <div id="ecritpar_couleur" class="legende">En savoir +</div>
+    </div>
+  </div>
+
+  <br>
+
+
+  <div class="titre_section">
+    <h2>Nos articles qui pourraient vous plaire</h2>
+    <hr>
+  </div>
+
+  <div class="container-4col">
+
+    <div class="article"><a href="article-lacour.html">
+      <figure class="ill_article_homepage">
+        <img src="images/article-lacour.gif" alt="IMG Grand Article (1fois)">
+      </figure>
+      <div class="infos">
+        <div class="legende">HTML/CSS</div>
+        <div class="legende">12MIN</div>
+      </div>
+      <h3>L’évolution des jeux dans les navigateurs web</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+      <div class="legende"><a href="auteur-lacour.html">Par Jérémy Lacour</a></div>
+    </div>
+    <div class="article"><a href="article-janocka.html">
+      <figure class="ill_article_homepage">
+        <img src="images/article-janocka-petit.jpg" alt="IMG Grand Article (1fois)">
+      </figure>
+      <div class="infos">
+        <div class="legende">HTML/CSS</div>
+        <div class="legende">12MIN</div>
+      </div>
+      <h3>Animer des illustrations dans le web</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+      <div class="legende"><a href="auteur-janocka.html">Par Axelle Janocka</a></div>
+    </div>
+    <div class="article"><a href="article-boudin.html">
+      <figure class="ill_article_homepage">
+        <img src="images/article-boudin.jpg" alt="IMG Grand Article (1fois)">
+      </figure>
+      <div class="infos">
+        <div class="legende">HTML/CSS</div>
+        <div class="legende">12MIN</div>
+      </div>
+      <h3>L’intéractivité améliore-t-elle vraiment l’UX ?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+      <div class="legende"><a href="auteur-boudin.html">Par Fanny Boudin</a></div>
+    </div>
+    <div class="article"><a href="article-rossaro.html">
+      <figure class="ill_article_homepage">
+        <img src="images/article-rossaro.jpg" alt="IMG Grand Article (1fois)">
+      </figure>
+      <div class="infos">
+        <div class="legende">HTML/CSS</div>
+        <div class="legende">12MIN</div>
+      </div>
+      <h3>Comment le web a-t-il influencé le design?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+      <div class="legende"><a href="auteur-rossaro.html">Par Clotilde Rossaro</a></div>
+    </div>
+
+  </div>
+  <br>
+
+
+
+  <div class="titre_section">
+    <h2>Sinon...</h2>
+    <hr>
+  </div>
+  <div class="container-4col">
+    <div>
+      <div class="article"><a href="article-faiz.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-faiez.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Les Designs systems</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-faiz.html">Leyla Faiz</a></div>
+      </div>
+      <div class="article"><a href="article-garnier.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-garnier.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Outil de prototypage & développements web</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-garnier.html">Pauline Garnier</a></div>
+      </div>
+    </div>
+
+    <div>
+
+      <div class="article"><a href="article-ithurritze.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-ithurritze-petit.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Étude de cas : radiooooo.com ; rassembler et digitaliser</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-ithurritze.html">Liza Ithurritze</a></div>
+      </div>
+      <div class="article"><a href="article-beziat.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-beziat.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Qu’est-ce q’un designer full stack ?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-beziat.html">Audrey Béziat</a></div>
+      </div>
+
+    </div>
+
+    <div>
+      <div class="article"><a href="article-jia.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-hanshuo-petit.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Teaching web design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-jia.html">Hanshuo Jia</a></div>
+      </div>
+
+
+    </div>
+    <div>
+      <div class="article"><a href="article-goussard.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-goussard.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Le web et la pollution numérique</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-goussard.html">Mélanie Goussard</a></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer>
+    <hr><br>
+    <div class="container-8col">
+      <div class="footergauche">
+        <div class="footer_rsx">Suivez-nous sur les réseaux sociaux</div>
+        <div class="rsx">
+          <figure class="ill_rs">
+            <img src="images/facebook.png" alt="Facebook">
+          </figure>
+          <figure class="ill_rs">
+            <img src="images/twitter.png" alt="Twitter">
+          </figure>
+          <figure class="ill_rs">
+            <img src="images/instagram.png" alt="Instagram">
+          </figure>
+        </div>
+      </div>
+      <div class="footerdroite">
+        <div class="footer_infos"><a href="a_propos.html">Contact</a></div>
+        <div class="footer_infos">FAQ</div>
+        <div class="footer_infos">Mentions légales</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  //Podcast
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+
+
+  var music = document.getElementById('music'); // id for audio element
+  var duration; // Duration of audio clip
+  var pButton = document.getElementById('pButton');
+  var stopButton = document.getElementById('stopButton'); // play button
+  var playhead = document.getElementById('playhead'); // playhead
+  var timeline = document.getElementById('timeline'); // timeline
+
+  // timeline width adjusted for playhead
+  var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+
+  // play button event listenter
+  pButton.addEventListener("click", play);
+  stopButton.addEventListener("click", stop);
+
+  // timeupdate event listener
+  music.addEventListener("timeupdate", timeUpdate, false);
+
+  // makes timeline clickable
+  timeline.addEventListener("click", function(event) {
+    moveplayhead(event);
+    music.currentTime = duration * clickPercent(event);
+  }, false);
+
+  // returns click as decimal (.77) of the total timelineWidth
+  function clickPercent(event) {
+    return (event.clientX - getPosition(timeline)) / timelineWidth;
+
+  }
+
+  // makes playhead draggable
+  playhead.addEventListener('mousedown', mouseDown, false);
+  window.addEventListener('mouseup', mouseUp, false);
+
+  // Boolean value so that audio position is updated only when the playhead is released
+  var onplayhead = false;
+
+  // mouseDown EventListener
+  function mouseDown() {
+    onplayhead = true;
+    window.addEventListener('mousemove', moveplayhead, true);
+    music.removeEventListener('timeupdate', timeUpdate, false);
+  }
+
+  // mouseUp EventListener
+  // getting input from all mouse clicks
+  function mouseUp(event) {
+    if (onplayhead == true) {
+      moveplayhead(event);
+      window.removeEventListener('mousemove', moveplayhead, true);
+      // change current time
+      music.currentTime = duration * clickPercent(event);
+      music.addEventListener('timeupdate', timeUpdate, false);
+    }
+    onplayhead = false;
+  }
+  // mousemove EventListener
+  // Moves playhead as user drags
+  function moveplayhead(event) {
+    var newMargLeft = event.clientX - getPosition(timeline);
+
+    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+      playhead.style.marginLeft = newMargLeft + "px";
+    }
+    if (newMargLeft < 0) {
+      playhead.style.marginLeft = "0px";
+    }
+    if (newMargLeft > timelineWidth) {
+      playhead.style.marginLeft = timelineWidth + "px";
+    }
+  }
+
+  // timeUpdate
+  // Synchronizes playhead position with current point in audio
+  function timeUpdate() {
+    var playPercent = timelineWidth * (music.currentTime / duration);
+    playhead.style.marginLeft = playPercent + "px";
+    if (music.currentTime == duration) {
+      pButton.className = "";
+      pButton.className = "play";
+    }
+  }
+
+  //Play and Pause
+  function play() {
+    // start music
+    if (music.paused) {
+      music.play();
+      // remove play, add pause
+      pButton.className = "";
+      pButton.className = "pause";
+    } else { // pause music
+      music.pause();
+      // remove pause, add play
+      pButton.className = "";
+      pButton.className = "play";
+    }
+  }
+
+  function stop() {
+    music.pause();
+    music.currentTime = 0;
+    pButton.className = "play";
+  };
+
+
+  // Gets audio file duration
+  music.addEventListener("canplaythrough", function() {
+    duration = music.duration;
+  }, false);
+
+  // getPosition
+  // Returns elements left position relative to top-left of viewport
+  function getPosition(el) {
+    return el.getBoundingClientRect().left;
+  }
+
+  /* DOMContentLoaded*/
+
+});
+
+//PopUp
+    var btnClose = document.getElementById('btnClose');
+    btnClose.addEventListener('click', close);
+
+    function close() {
+      overlay.style.display = 'none';
+    }
+
+
+    var versionboudin = document.getElementById('versionboudin');
+
+    var btnPopupbeziat = document.getElementById('btnPopupbeziat');
+    var affichebeziat = document.getElementById('affichebeziat');
+
+    var btnPopupgoussard = document.getElementById('btnPopupgoussard');
+    var affichegoussard = document.getElementById('affichegoussard');
+
+    var btnPopupcolongue = document.getElementById('btnPopupcolongue');
+    var affichecolongue = document.getElementById('affichecolongue');
+
+    var btnPopuplacour = document.getElementById('btnPopuplacour');
+    var affichelacour = document.getElementById('affichelacour');
+
+    var btnPopupgarnier = document.getElementById('btnPopupgarnier');
+    var affichegarnier = document.getElementById('affichegarnier');
+
+    var btnPopupboudin = document.getElementById('btnPopupboudin');
+    var afficheboudin = document.getElementById('afficheboudin');
+
+    var btnPopuprossaro = document.getElementById('btnPopuprossaro');
+    var afficherossaro = document.getElementById('afficherossaro');
+
+    var btnPopupjanocka = document.getElementById('btnPopupjanocka');
+    var affichejanocka = document.getElementById('affichejanocka');
+
+    var btnPopupjia = document.getElementById('btnPopupjia');
+    var affichejia = document.getElementById('affichejia');
+
+    var btnPopupfaiez = document.getElementById('btnPopupfaiez');
+    var affichefaiez = document.getElementById('affichefaiez');
+
+    var btnPopupithurritz = document.getElementById('btnPopupithurritz');
+    var afficheithurritz = document.getElementById('afficheithurritz');
+
+    var overlay = document.getElementById('overlay');
+    var affichegoussard = document.getElementById('affichegoussard');
+
+
+    versionboudin.addEventListener('click', openboudin);
+
+    function open() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "block";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+    btnPopupbeziat.addEventListener('click', openbeziat);
+
+    function openbeziat() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "block";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+    btnPopupcolongue.addEventListener('click', opencolongue);
+
+    function opencolongue() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "block";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupfaiez.addEventListener('click', openfaiez);
+
+    function openfaiez() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "block";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "var(--text-color-normal)";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupithurritz.addEventListener('click', openithurritz);
+
+    function openithurritz() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "block";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopuplacour.addEventListener('click', openlacour);
+
+    function openlacour() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "block";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupjia.addEventListener('click', openjia);
+
+    function openjia() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "block";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopuprossaro.addEventListener('click', openrossaro);
+
+    function openrossaro() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "block";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupboudin.addEventListener('click', openboudin);
+
+    function openboudin() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "block";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupgarnier.addEventListener('click', opengarnier);
+
+    function opengarnier() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "block";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "var(--text-color-normal)";
+    }
+
+    btnPopupjanocka.addEventListener('click', openjanocka);
+
+    function openjanocka() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "block";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "var(--text-color-normal)";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupgoussard.addEventListener('click', open);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout-exp.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+
+</head>
+
+<body class="pageauteur">
+
+  <style>
+    .play {
+      background: url('images/svg/podcast_play.svg') no-repeat;
+    }
+
+    .pause {
+      background: url('images/svg/podcast_pause.svg') no-repeat;
+    }
+
+    .stop {
+      background: url('images/svg/podcast_stop.svg') no-repeat;
+    }
+
+    #music {
+      display: none;
+    }
+  </style>
+  <header>
+    <div class="main-title"><a href="accueil.html">Web Journal</a></div>
+    </div>
+    <div class="menuheader">
+      <hr>
+      <section class="container-menu2col">
+        <div class="menu"><a href="accueil.html">Nos articles & podcasts</a></div>
+        <div class="menu"><a href="a_propos.html">Qui sommes-nous ?</a></div>
+      </section>
+      <hr>
+    </div>
+  </header>
+
+  <div class="container-2col podcast_base">
+    <div class="texte_base">
+      <div class="infos">
+        <div class="gros_legende">HTML/CSS</div>
+        <div class="gros_legende">12MIN</div>
+      </div>
+      <h1>Les designs systems</h1>
+      <div class="gros_legende">Par <a href="auteur-faiz.html">Leyla Faiz</a></div>
+
+      <div class="legende">1<sup>er</sup> janvier 2021</div>
+    </div>
+
+    <div>
+      <figure class="ill_principale_article">
+        <img src="images/article-faiez.jpg" alt="IMG Grand Article (1fois)">
+      </figure>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="container-2col53 contenusection">
+    <div>
+      <p class="contenu_article">
+
+Qu’est-ce qu’un design system ?
+<br></br>
+*Dans cet article les termes « système de design » et « design systems » signifient la même chose et sont interchangeables.
+“A design system is a set of interconnected patterns and shared practices coherently organized to achiever the purpose of digital products. Patterns are the repeating elements that we combine to create and interface: things like user flows, interactions, buttons, text fields, icons, colors, typography, microcopy. Practices are how we choose to create, capture, share and use those patterns, particularly when working in a team.”
+Comme le dit Anna Kolmatova dans son livre « design systems », un système de design est une collection de composants réutilisables guidés par des normes graphiques et des valeurs propres à un projet, une agence ou à une marque. Ils sont utilisés pour produire de nouveaux éléments et produits au cours du temps.
+<br></br>
+Pour comprendre cette définition plus ou moins compliquée, imaginons que nous sommes une nouvelle recrue dans une agence de web et que nous nous apprêtons enfin à débuter notre premier projet digital avec notre équipe. Cette dernière a déjà travaillé sur ce projet et connaissent déjà les détails graphiques et les bonnes pratiques de travail. Heureusement pour vous, ils ont pensé à tout ! Un design système est déjà prêt, et en le consultant vous pourrez y découvrir toutes sortes de détails qui vous seront utiles pour mener le projet à bien :
+<br></br>
+- L’identité de la marque ou l’entreprise pour laquelle vous travaillerez
+- Le look and feel avec des exemples concrets
+- Le voice and tones avec d’autres exemples
+- Writing and copy
+- Style guides, components et code les accompagnants
+- Bonnes pratiques au sein de l’équipe et principes de design
+<br></br>
+Avec toutes les nouvelles informations que vous avez sur le projet, vous pouvez commencer à travailler dessus en suivant cette charte graphique digitale, adopter le ton de voix utilisé, voir le code qui correspond à ce qui a déjà été développé et commencer à appliquer des principes à suivre au sein de l’équipe pour une productivité maximale et organisée.
+<br></br>
+Le système de design permettra aussi d’être à la page sur les nouveautés instaurées dans le site au fur et à mesure, il faut donc le développer en même temps que le projet.
+<br></br>
+Mais alors, qu’est-ce qu’on met dedans ?
+<br></br>
+La liste plus haut montre déjà quels peuvent être les différents composants d’un design system, mais ce qui différencie un système de design d’un styleguide ou d’une bibliothèque de motifs c’est le fait d’inclure des composants intangibles à ceux qu’on a l’habitude de voir. Voici quelques exemples explicatifs :
+<br></br>
+• Des principes d’expérience :
+Sur quels principes est basé notre site web ou notre application ? Quelles valeurs vont être mises en avant ? Ces aspects peuvent être listés et nos choix en termes de contenu ou d’interaction avec l’utilisateur doivent respecter ces principes.
+Ex :
+<br></br>
+• Les objectifs et valeurs partagés :
+Suivre les valeurs de la marque, du produit ou de l’organisme et permettre à l’utilisateur d’avoir une image claire de ce qui veut être véhiculé.
+Ex :
+<br></br>
+• Working mentality :
+Comment la division du travail, l’organisation et les principes de conceptions du site se font au sein de l’équipe.
+<br></br>
+Les composants tangibles seront quant à eux les éléments qui régissent le design du site, de la marque, du produit… Comme mentionné précédemment on pourra retrouver les couleurs utilisées (principales, secondaires…), les différentes typographies et leurs buts d’utilisation, l’iconographie, les illustrations, les types de photographies qu’on peut utiliser, les animations diverses, jusqu’à aller à des détails plus poussés tels que comment gérer les espacements, des cas précis d’utilisations de certains éléments etc.
+<br></br>
+On pourra également retrouver des principes de manipulation de chacun des éléments avec des exemples démontrant d’une part la bonne utilisation de ceux-ci et d’une autre la mauvaise utilisation et ce qu’il faut éviter de concevoir.
+<br></br>
+Partant de ce principe, on pourra petit à petit commencer à créer ce qui seront par la suite nos composants. Brad Frost parle dans son livre de « atomic design ». Le but est donc de commencer par créer les plus petits éléments de notre projet en premier (les atomes), pour ensuite commencer à les rassembler et créer des composants (les molécules). Tous ces composants pourront par la suite créer des sections de pages (les organismes) pour finir par avoir un template prêt à l’emploi. Tous ces éléments sont répertoriés dans le design system pour une utilisation optimale et efficace.
+<br></br><br></br>
+
+Les types de systèmes existants
+Il existe plusieurs sortes de systèmes de design et de gestions possibles au sein des équipes, dépendant des besoins du projet, de sa complexité, de l’identité de la marque, produit ou entreprise pour laquelle on travailler ainsi que de la répartition du travail.
+Les design systems stricts :
+Ces design systems seront très documentés et laisseront très peu de place à l’expérimentation ou à la conception de produits très différents. La conception graphique et le développement par la suite suivent en général une ligne très semblable également.
+Les design systems flexibles :
+Ces design systems seront moins documentés et moins à cheval sur les détails des différents composants et produits. Ils laisseront beaucoup plus de liberté pour expérimenter et seront présents à titre indicatif pour guider les membres de l’équipe.
+Les design systems centralisés :
+Ce type de design system et celui que l’on mentionnera en suivant dépendront entièrement de la répartition du travail au sein de l’équipe. Un système de design centralisé reposera sur une équipe dédiée à l’évolution du design au cours du projet et qui informera le reste des équipes sur les démarches à suivre. Les autres équipes peuvent participer à la construction du système, mais les décisions finales reviendront toujours à l’équipe chargée du design system.
+Les design systems répartis :
+Ce type de design repose quant à lui sur l’ensemble des équipes qui participent au projet. Chaque équipe va pouvoir participer et ajouter des composants spécifiques à leur travail dans le design système (Par exemple, l’équipe de design pourra ajouter les différents éléments graphiques, alors que les développeurs pourront inclure des bouts de codes nécessaires au développement du produit final). Les composants ajoutés sont donc fiables, vu que l’équipe directement concernée les a ajoutés, mais les systèmes de design suivant cette méthodologie peuvent faire face à un manque de cohésion entre les différents éléments des différentes équipes, contrairement à un système de design centralisé qui va voir tous ses éléments pris en charge par la même équipe.
+<br></br>
+Il existe d’autres types de design systems et d’autres méthodologies utilisées, mais il faut garder en tête qu’elles sont toutes adaptées aux besoins du projet et au bon fonctionnement des équipes en charge de celui-ci.
+<br></br>
+<br></br>
+Pourquoi utiliser un design system ?
+<br></br>
+On peut se poser des questions quant à l’utilité d’un design system. Ils peuvent paraitre compliqué à mettre en place et être chronophages. Même s’ils sont requiert un certain temps de mise en place, le gain de temps qu’il y a par la suite dans l’avancement du projet est considérable pour chaque membre des différentes équipes. Toute information qui peut être utile y aura sa place, et le projet pourra avancer plus rapidement sans perdre de temps avec de potentielles erreurs qui auraient eu lieu sans.
+<br></br>
+Le gain de temps est aussi très important pour les nouveaux équipiers qui intègrent le projet en cours de route, car toutes les informations sont réunies dans un seul et même système, permettant une assimilation et une cohésion plus rapide avec le projet et le reste de l’équipe.
+Vous pourrez trouver dans le lien suivant https://designsystemsrepo.com/design-systems/ une liste des design systems qui existent sur le web.
+Certains des plus connus étant :
+- Material Design by Google ( https://material.io/ )
+- Polaris by Shopify ( https://polaris.shopify.com/ )
+- Carbon by IBM ( https://www.carbondesignsystem.com/ )
+- Airbnb Design by Airbnb ( https://airbnb.design/building-a-visual-language/ )
+<br></br>
+Pour plus d’informations sur les design systems, le livre d’Alla Kholmatova en parle de façon plus précise et approfondie.
+Pour d’autres information autour du web, consultez les autres articles rédigés par les étudiants de l’ECV ! Bonne lecture !
+
+      </p>
+    </div>
+    <div>
+      <div class="podcast"><a href="podcast-faiz.html">
+          <div class="container-2col contenusection">
+            <div>
+              <div>
+
+                <h3>" Les design systems "</h3><br>
+                <div class="legende">Avec Thierry Franck</div>
+              </div>
+            </div>
+            <figure class="ill_liste_podcast">
+              <img src="images/podcast-faiz.jpg" alt="IMG Grand Article (1fois)">
+            </figure>
+          </div></a>
+          <div>
+            <audio id="music" controls="controls">
+              <source src="podcasts/1.mp3" /></audio>
+            <div id="audioplayer">
+              <div id="timeline">
+                <div id="playhead"></div>  </div>
+            <div class="stopplaybutton">
+              <button id="pButton" class="play" onclick="play()"></button>
+              <button id="stopButton" class="stop" onclick="stop()"></button>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      <div id="exerguearticle" class="exergue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+      </div>
+      <div id="floatright" class="partagez_rs">
+        <div class="gros_legende" id="partagez">Partagez</div>
+        <div class="rs">
+          <figure class="ill_rs">
+            <a href=""><img src="images/facebook.png" alt="facebook"></a>
+          </figure>
+          <figure class="ill_rs">
+            <a href=""><img src="images/twitter.png" alt="twitter"></a>
+          </figure>
+          <figure class="ill_rs">
+            <a href=""><img src="images/instagram.png" alt="Instagram"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <br>
+  <hr>
+
+  <div class="container-2col17 contenusection ecritpar"><a href="auteur-faiz.html">
+    <figure class="ill_liste_auteur_petit">
+      <img src="images/auteur-faiz.jpg" alt="IMG Grand Article (1fois)">
+    </figure>
+    <div>
+      <div id="ecritpar_couleur" class="gros_legende">Écrit par Leyla Faiz</a></div>
+      <p>Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta tiumqui beat quiasperibus et exernam, cum venihilliae omnia</p>
+      <div id="ecritpar_couleur" class="legende">En savoir +</div>
+    </div>
+  </div>
+
+  <br>
+
+
+  <div class="titre_section">
+    <h2>Nos articles qui pourraient vous plaire</h2>
+    <hr>
+  </div>
+
+  <div class="container-4col">
+
+    <div class="article"><a href="article-lacour.html">
+      <figure class="ill_article_homepage">
+        <img src="images/article-lacour.gif" alt="IMG Grand Article (1fois)">
+      </figure>
+      <div class="infos">
+        <div class="legende">HTML/CSS</div>
+        <div class="legende">12MIN</div>
+      </div>
+      <h3>L’évolution des jeux dans les navigateurs web</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+      <div class="legende"><a href="auteur-lacour.html">Par Jérémy Lacour</a></div>
+    </div>
+    <div class="article"><a href="article-janocka.html">
+      <figure class="ill_article_homepage">
+        <img src="images/article-janocka.jpg" alt="IMG Grand Article (1fois)">
+      </figure>
+      <div class="infos">
+        <div class="legende">HTML/CSS</div>
+        <div class="legende">12MIN</div>
+      </div>
+      <h3>Animer des illustrations dans le web</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+      <div class="legende"><a href="auteur-janocka.html">Par Axelle Janocka</a></div>
+    </div>
+    <div class="article"><a href="article-boudin.html">
+      <figure class="ill_article_homepage">
+        <img src="images/article-boudin.jpg" alt="IMG Grand Article (1fois)">
+      </figure>
+      <div class="infos">
+        <div class="legende">HTML/CSS</div>
+        <div class="legende">12MIN</div>
+      </div>
+      <h3>L’intéractivité améliore-t-elle vraiment l’UX ?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+      <div class="legende"><a href="auteur-boudin.html">Par Fanny Boudin</a></div>
+    </div>
+    <div class="article"><a href="article-rossaro.html">
+      <figure class="ill_article_homepage">
+        <img src="images/article-rossaro.jpg" alt="IMG Grand Article (1fois)">
+      </figure>
+      <div class="infos">
+        <div class="legende">HTML/CSS</div>
+        <div class="legende">12MIN</div>
+      </div>
+      <h3>Comment le web a-t-il influencé le design?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+      <div class="legende"><a href="auteur-rossaro.html">Par Clotilde Rossaro</a></div>
+    </div>
+
+  </div>
+  <br>
+
+
+
+  <div class="titre_section">
+    <h2>Sinon...</h2>
+    <hr>
+  </div>
+  <div class="container-4col">
+    <div>
+      <div class="article"><a href="article-jia.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-hanshuo-petit.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Teaching web design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-jia.html">Hanshuo Jia</a></div>
+      </div>
+      <div class="article"><a href="article-garnier.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-garnier.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Outil de prototypage & développements web</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-garnier.html">Pauline Garnier</a></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="article"><a href="article-colongue.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-colongue-petit.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Les limites du HTML / CSS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-colongue.html">Emma Colongue</a></div>
+      </div>
+      <div class="article"><a href="article-ithurritze.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-ithurritze-petit.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Étude de cas : radiooooo.com ; rassembler et digitaliser</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-ithurritze.html">Liza Ithurritze</a></div>
+      </div>
+    </div>
+
+    <div>
+
+      <div class="article"><a href="article-beziat.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-beziat.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Qu’est-ce q’un designer full stack ?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-beziat.html">Audrey Béziat</a></div>
+      </div>
+
+    </div>
+    <div>
+      <div class="article"><a href="article-goussard.html">
+        <figure class="ill_article_homepage">
+          <img src="images/article-goussard.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+        <div class="infos">
+          <div class="legende">HTML/CSS</div>
+          <div class="legende">12MIN</div>
+        </div>
+        <h3>Le web et la pollution numérique</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+        <div class="legende">Par <a href="auteur-goussard.html">Mélanie Goussard</a></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer>
+    <hr><br>
+    <div class="container-8col">
+      <div class="footergauche">
+        <div class="footer_rsx">Suivez-nous sur les réseaux sociaux</div>
+        <div class="rsx">
+          <figure class="ill_rs">
+            <img src="images/facebook.png" alt="Facebook">
+          </figure>
+          <figure class="ill_rs">
+            <img src="images/twitter.png" alt="Twitter">
+          </figure>
+          <figure class="ill_rs">
+            <img src="images/instagram.png" alt="Instagram">
+          </figure>
+        </div>
+      </div>
+      <div class="footerdroite">
+        <div class="footer_infos"><a href="a_propos.html">Contact</a></div>
+        <div class="footer_infos">FAQ</div>
+        <div class="footer_infos">Mentions légales</div>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+  //Podcast
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+
+
+
+  var music = document.getElementById('music'); // id for audio element
+  var duration; // Duration of audio clip
+  var pButton = document.getElementById('pButton');
+  var stopButton = document.getElementById('stopButton'); // play button
+  var playhead = document.getElementById('playhead'); // playhead
+  var timeline = document.getElementById('timeline'); // timeline
+
+  // timeline width adjusted for playhead
+  var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+
+  // play button event listenter
+  pButton.addEventListener("click", play);
+  stopButton.addEventListener("click", stop);
+
+  // timeupdate event listener
+  music.addEventListener("timeupdate", timeUpdate, false);
+
+  // makes timeline clickable
+  timeline.addEventListener("click", function(event) {
+    moveplayhead(event);
+    music.currentTime = duration * clickPercent(event);
+  }, false);
+
+  // returns click as decimal (.77) of the total timelineWidth
+  function clickPercent(event) {
+    return (event.clientX - getPosition(timeline)) / timelineWidth;
+
+  }
+
+  // makes playhead draggable
+  playhead.addEventListener('mousedown', mouseDown, false);
+  window.addEventListener('mouseup', mouseUp, false);
+
+  // Boolean value so that audio position is updated only when the playhead is released
+  var onplayhead = false;
+
+  // mouseDown EventListener
+  function mouseDown() {
+    onplayhead = true;
+    window.addEventListener('mousemove', moveplayhead, true);
+    music.removeEventListener('timeupdate', timeUpdate, false);
+  }
+
+  // mouseUp EventListener
+  // getting input from all mouse clicks
+  function mouseUp(event) {
+    if (onplayhead == true) {
+      moveplayhead(event);
+      window.removeEventListener('mousemove', moveplayhead, true);
+      // change current time
+      music.currentTime = duration * clickPercent(event);
+      music.addEventListener('timeupdate', timeUpdate, false);
+    }
+    onplayhead = false;
+  }
+  // mousemove EventListener
+  // Moves playhead as user drags
+  function moveplayhead(event) {
+    var newMargLeft = event.clientX - getPosition(timeline);
+
+    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+      playhead.style.marginLeft = newMargLeft + "px";
+    }
+    if (newMargLeft < 0) {
+      playhead.style.marginLeft = "0px";
+    }
+    if (newMargLeft > timelineWidth) {
+      playhead.style.marginLeft = timelineWidth + "px";
+    }
+  }
+
+  // timeUpdate
+  // Synchronizes playhead position with current point in audio
+  function timeUpdate() {
+    var playPercent = timelineWidth * (music.currentTime / duration);
+    playhead.style.marginLeft = playPercent + "px";
+    if (music.currentTime == duration) {
+      pButton.className = "";
+      pButton.className = "play";
+    }
+  }
+
+  //Play and Pause
+  function play() {
+    // start music
+    if (music.paused) {
+      music.play();
+      // remove play, add pause
+      pButton.className = "";
+      pButton.className = "pause";
+    } else { // pause music
+      music.pause();
+      // remove pause, add play
+      pButton.className = "";
+      pButton.className = "play";
+    }
+  }
+
+  function stop() {
+    music.pause();
+    music.currentTime = 0;
+    pButton.className = "play";
+  };
+
+
+  // Gets audio file duration
+  music.addEventListener("canplaythrough", function() {
+    duration = music.duration;
+  }, false);
+
+  // getPosition
+  // Returns elements left position relative to top-left of viewport
+  function getPosition(el) {
+    return el.getBoundingClientRect().left;
+  }
+
+  /* DOMContentLoaded*/
+
+});
+
+//PopUp
+    var btnClose = document.getElementById('btnClose');
+    btnClose.addEventListener('click', close);
+
+    function close() {
+      overlay.style.display = 'none';
+    }
+
+
+    var versionboudin = document.getElementById('versionboudin');
+
+    var btnPopupbeziat = document.getElementById('btnPopupbeziat');
+    var affichebeziat = document.getElementById('affichebeziat');
+
+    var btnPopupgoussard = document.getElementById('btnPopupgoussard');
+    var affichegoussard = document.getElementById('affichegoussard');
+
+    var btnPopupcolongue = document.getElementById('btnPopupcolongue');
+    var affichecolongue = document.getElementById('affichecolongue');
+
+    var btnPopuplacour = document.getElementById('btnPopuplacour');
+    var affichelacour = document.getElementById('affichelacour');
+
+    var btnPopupgarnier = document.getElementById('btnPopupgarnier');
+    var affichegarnier = document.getElementById('affichegarnier');
+
+    var btnPopupboudin = document.getElementById('btnPopupboudin');
+    var afficheboudin = document.getElementById('afficheboudin');
+
+    var btnPopuprossaro = document.getElementById('btnPopuprossaro');
+    var afficherossaro = document.getElementById('afficherossaro');
+
+    var btnPopupjanocka = document.getElementById('btnPopupjanocka');
+    var affichejanocka = document.getElementById('affichejanocka');
+
+    var btnPopupjia = document.getElementById('btnPopupjia');
+    var affichejia = document.getElementById('affichejia');
+
+    var btnPopupfaiez = document.getElementById('btnPopupfaiez');
+    var affichefaiez = document.getElementById('affichefaiez');
+
+    var btnPopupithurritz = document.getElementById('btnPopupithurritz');
+    var afficheithurritz = document.getElementById('afficheithurritz');
+
+    var overlay = document.getElementById('overlay');
+    var affichegoussard = document.getElementById('affichegoussard');
+
+
+    versionboudin.addEventListener('click', openboudin);
+
+    function open() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "block";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+    btnPopupbeziat.addEventListener('click', openbeziat);
+
+    function openbeziat() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "block";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+    btnPopupcolongue.addEventListener('click', opencolongue);
+
+    function opencolongue() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "block";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupfaiez.addEventListener('click', openfaiez);
+
+    function openfaiez() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "block";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "var(--text-color-normal)";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupithurritz.addEventListener('click', openithurritz);
+
+    function openithurritz() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "block";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopuplacour.addEventListener('click', openlacour);
+
+    function openlacour() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "block";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupjia.addEventListener('click', openjia);
+
+    function openjia() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "block";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopuprossaro.addEventListener('click', openrossaro);
+
+    function openrossaro() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "block";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupboudin.addEventListener('click', openboudin);
+
+    function openboudin() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "block";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "var(--text-color-normal)";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupgarnier.addEventListener('click', opengarnier);
+
+    function opengarnier() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "none";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "block";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "#F3F0EC";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "var(--text-color-normal)";
+    }
+
+    btnPopupjanocka.addEventListener('click', openjanocka);
+
+    function openjanocka() {
+      overlay.style.display = 'block';
+      affichegoussard.style.display = "none";
+      affichebeziat.style.display = "none";
+      affichecolongue.style.display = "none";
+      affichejia.style.display = "none";
+      afficheithurritz.style.display = "none";
+      affichefaiez.style.display = "none";
+      afficherossaro.style.display = "none";
+      afficheboudin.style.display = "none";
+      affichejanocka.style.display = "block";
+      affichelacour.style.display = "none";
+      affichegarnier.style.display = "none";
+      btnPopupgoussard.style.backgroundColor = "#F3F0EC";
+      btnPopupbeziat.style.backgroundColor = "#F3F0EC";
+      btnPopupcolongue.style.backgroundColor = "#F3F0EC";
+      btnPopupjia.style.backgroundColor = "#F3F0EC";
+      btnPopupithurritz.style.backgroundColor = "#F3F0EC";
+      btnPopupfaiez.style.backgroundColor = "#F3F0EC";
+      btnPopuprossaro.style.backgroundColor = "#F3F0EC";
+      btnPopupboudin.style.backgroundColor = "#F3F0EC";
+      btnPopupjanocka.style.backgroundColor = "var(--text-color-normal)";
+      btnPopuplacour.style.backgroundColor = "#F3F0EC";
+      btnPopupgarnier.style.backgroundColor = "#F3F0EC";
+    }
+
+    btnPopupgoussard.addEventListener('click', open);
+  </script>
+</body>
+
+</html>
