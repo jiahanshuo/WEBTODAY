@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout-exp.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+
+</head>
+<body class="pageauteur">
+
+  <style>
+    .play {
+      background: url('images/svg/podcast_play.svg') no-repeat;
+    }
+
+    .pause {
+      background: url('images/svg/podcast_pause.svg') no-repeat;
+    }
+
+    .stop {
+      background: url('images/svg/podcast_stop.svg') no-repeat;
+    }
+
+    #music {
+      display: none;
+    }
+  </style>
+
+  <header>
+    <div class="main-title"><a href="accueil.html">Web Journal</a></div>
+
+    <div class="menuheader">
+      <hr>
+      <section class="container-menu2col">
+        <div class="menu"><a href="accueil.html">Nos articles & podcasts</a></div>
+        <div class="menu"><a href="a_propos.html">Qui sommes-nous ?</a></div>
+      </section>
+      <hr>
+    </div>
+  </header>
+<div class="container-2col">
+  <h1 class="nomauteur">Jérémy <br>LACOUR</h1><div></div>
+</div>
+<br>
+<div class="container-2col43">
+  <div><figure class="ill_principale_article">
+    <img src="images/auteur-lacour.jpg" alt="IMG Principale Page"></figure></div>
+    <div class="infos_contact">
+
+      <h3 id="text_contact">Contact</h3>
+      <div class="text_perso_contact">06 48 75 54 83</div>
+      <div class="text_perso_contact"><a href="mailto: jeremylacourbox@gmail.com"> jeremylacourbox@gmail.com</div><br>
+      <div class="text_perso_contact"><a href="https://www.bapl.io/">bapl.io/</a></div><br>
+      <div class="rs">
+        <figure class="ill_rs">
+          <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-lacour-093961194/"><img src="images/linkedin.png" alt="LINKEDIN"></a>
+        </figure>
+        <figure class="ill_rs">
+          <a href="https://www.instagram.com/ba_pl/"><img src="images/instagram.png" alt="INSTAGRAM"></a>
+        </figure>
+      </div>
+
+    </div>
+</div>
+
+<br>
+
+<section class="container-8col">
+<div class="container-2col34 contenusection">
+  <div><p>
+    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+    aliquip ex ea commodo consequat.
+    Lorem ipsum dolor sit amet, <br>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+    utaliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+    luptatumzzril delenit augue.<br>
+    aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+    luptatum
+  </p></div>
+  <div id="versionlacour"><h2>Sa version</h2>
+  <hr>
+  <figure class="ill_version_site contenusection">
+    <img src="images/version-lacour.jpg" alt="IMG Grand Article (1fois)">
+  </figure></div>
+</div></section>
+<br>
+<div id="articlepodcast-auteur" class="container-2col">
+  <div>
+    <div>
+      <h2>Ses articles</h2>
+      <hr>
+    </div>
+    <div class="container-2col contenusection">
+
+        <div class="article">
+          <figure class="ill_article_homepage">
+            <img src="images/article-lacour.gif" alt="IMG Grand Article (1fois)">
+          </figure>
+          <div class="infos">
+            <div class="legende">HTML/CSS</div>
+            <div class="legende">12MIN</div>
+          </div>
+          <a href="article-lacour.html"><h3>L'évolution des jeux dans les navigateurs web</h3></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p>
+          <div class="legende">Par Jérémy Lacour</div>
+        </div>
+
+    </div>
+  </div>
+
+<div>
+  <div><h2>Ses podcasts</h2>
+  <hr></div>
+  <div class="podcast"><a href="podcast-lacour.html">
+      <div class="container-2col contenusection">
+        <div>
+          <div>
+            <h3>L’évolution des jeux dans les navigateurs web</h3><br>
+
+            <div class="legende">Avec Thierry Franck</div>
+          </div>
+        </div>
+        <figure class="ill_liste_podcast">
+          <img src="images/podcast-lacour.gif" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div></a>
+      <div>
+        <audio id="music" controls="controls">
+          <source src="podcasts/1.mp3" /></audio>
+        <div id="audioplayer">
+          <div id="timeline">
+            <div id="playhead"></div>  </div>
+        <div class="stopplaybutton">
+          <button id="pButton" class="play" onclick="play()"></button>
+          <button id="stopButton" class="stop" onclick="stop()"></button>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+  <div class="titre_section"><h2>Nos autres auteurs</h2>
+  <hr></div>
+  <div class="container-4col contenusection">
+    <div class="auteur1"><a href="auteur-beziat.html">
+      <h3>Audrey Beziat</h3>
+      <div>
+        <figure class="ill_liste_auteur">
+          <img src="images/auteur-beziat.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+    </div>
+    <div class="auteur1"><a href="auteur-boudin.html">
+      <h3>Fanny Boudin</h3>
+      <div>
+        <figure class="ill_liste_auteur">
+          <img src="images/auteur-boudin.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+    </div>
+    <div class="auteur1"><a href="auteur-colongue.html">
+      <h3>Emma Colongue</h3>
+      <div>
+        <figure class="ill_liste_auteur">
+          <img src="images/auteur-colongue.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+    </div>
+    <div class="auteur1"><a href="auteur-faiz.html">
+      <h3>Leyla Faiz</h3>
+      <div>
+        <figure class="ill_liste_auteur">
+          <img src="images/auteur-faiz.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+    </div>
+    <div class="auteur1"><a href="auteur-garnier.html">
+      <h3>Pauline Garnier</h3>
+      <div>
+        <figure class="ill_liste_auteur">
+          <img src="images/auteur-garnier.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+    </div>
+    <div class="auteur1"><a href="auteur-goussard.html">
+      <h3>Mélanie Goussard</h3>
+      <div>
+        <figure class="ill_liste_auteur">
+          <img src="images/auteur-goussard.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+    </div>
+    <div class="auteur1"><a href="auteur-ithurritze.html">
+      <h3>Lisa Ithurritze</h3>
+      <div>
+        <figure class="ill_liste_auteur">
+          <img src="images/auteur-ithurritze.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+    </div>
+    <div class="auteur1"><a href="auteur-janocka.html">
+      <h3>Axelle Janocka</h3>
+      <div>
+        <figure class="ill_liste_auteur">
+          <img src="images/auteur-janocka.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+    </div>
+    <div class="auteur1"><a href="auteur-jia.html">
+      <h3>Hanshuo Jia</h3>
+      <div>
+        <figure class="ill_liste_auteur">
+          <img src="images/auteur-hanshuo.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+    </div>
+    <div class="auteur1"><a href="auteur-rossaro.html">
+      <h3>Clotilde Rossaro</h3>
+      <div>
+        <figure class="ill_liste_auteur">
+          <img src="images/auteur-rossaro.jpg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing dignissim sit amteletit del arte...</p></a>
+    </div>
+
+
+  </div>
+  <div id="overlay" class="overlay">
+    <div id="popup" class="popup">
+
+      <div class="btnClose" id="btnClose">
+        <figure class="ill_close">
+          <img src="images/svg/ill_close.svg" alt="IMG Grand Article (1fois)">
+        </figure>
+      </div>
+      <div id="affichegoussard">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-goussard.html">Mélanie Goussard</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-goussard.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" height="400" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+      <div id="affichebeziat">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-beziat.html">Audrey Béziat</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-beziat.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+      <div id="affichecolongue">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-colongue.html">Emma Colongue</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-colongue.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+      <div id="affichelacour">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-lacour.html">Jérémy Lacour</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-lacour.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+      <div id="affichejia">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-jia.html">Hanshuo Jia</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-jia.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+      <div id="afficherossaro">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-rossaro.html">Clotilde Rossaro</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-rossaro.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+      <div id="affichegarnier">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-garnier.html">Pauline Garnier</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-garnier.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+      <div id="afficheboudin">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-boudin.html">Fanny Boudin</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-boudin.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+      <div id="affichejanocka">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-janocka.html">Axelle Janocka</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-janocka.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+      <div id="afficheithurritz">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-ithurritze.html">Liza Ithurritz</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-ithurritze.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+      <div id="affichefaiez">
+        <div class="container-8col contenupopup">
+          <div class="leftpopup">
+            <h3>Eye of the Tiger<br>
+              selon <a href="auteur-faiz.html">Leyla Faiz</a></h3>
+            <br>
+            <hr><br>
+            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+              nisl
+              ut
+              aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet.</p>
+            <div class="ecritparpopup container-3col">
+              <div class="figpopup">
+                <a href="auteur-faiz.html"><figure class="ill_liste_auteur_petit">
+                  <img src="images/ill_liste_auteur_petit.jpg" alt="IMG Grand Article (1fois)">
+                </figure></a>
+              </div>
+              <p class="ppopup">Cipicium dipicie niminus cimilluptas cus magnis nulpa cum eatem qui incim quo earupta.</p>
+            </div>
+          </div>
+          <div class="rightpopup video">
+            <video width="1000" class="width definir pbm ici (class à supr)" controls="controls">
+              <source src="videos/1.mp4" type="video/mp4" /> </video>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="nav_versions">
+        <div id="btnPopupgoussard"></div>
+        <div id="btnPopupbeziat"></div>
+        <div id="btnPopupcolongue"></div>
+        <div id="btnPopupjia"></div>
+        <div id="btnPopuplacour"></div>
+        <div id="btnPopupgarnier"></div>
+        <div id="btnPopupboudin"></div>
+        <div id="btnPopuprossaro"></div>
+        <div id="btnPopupithurritz"></div>
+        <div id="btnPopupjanocka"></div>
+        <div id="btnPopupfaiez"></div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <hr><br>
+    <div class="container-8col">
+      <div class="footergauche">
+        <div class="footer_rsx">Suivez-nous sur les réseaux sociaux</div>
+        <div class="rsx">
+          <figure class="ill_rs">
+            <img src="images/facebook.png" alt="Twitter">
+          </figure>
+
+          <figure class="ill_rs">
+            <img src="images/twitter.png" alt="Instagram">
+          </figure>
+
+          <figure class="ill_rs">
+            <img src="images/instagram.png" alt="Facebook">
+          </figure>
+
+        </div>
+      </div>
+      <div class="footerdroite">
+        <div class="footer_infos"><a href="a_propos.html">Contact</a></div>
+        <div class="footer_infos">FAQ</div>
+        <div class="footer_infos">Mentions légales</div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/popuplacour.js"></script>
+<script>
+
+//Podcast
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
+
+var music = document.getElementById('music'); // id for audio element
+var duration; // Duration of audio clip
+var pButton = document.getElementById('pButton');
+var stopButton = document.getElementById('stopButton'); // play button
+var playhead = document.getElementById('playhead'); // playhead
+var timeline = document.getElementById('timeline'); // timeline
+
+// timeline width adjusted for playhead
+var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+
+// play button event listenter
+pButton.addEventListener("click", play);
+stopButton.addEventListener("click", stop);
+
+// timeupdate event listener
+music.addEventListener("timeupdate", timeUpdate, false);
+
+// makes timeline clickable
+timeline.addEventListener("click", function(event) {
+  moveplayhead(event);
+  music.currentTime = duration * clickPercent(event);
+}, false);
+
+// returns click as decimal (.77) of the total timelineWidth
+function clickPercent(event) {
+  return (event.clientX - getPosition(timeline)) / timelineWidth;
+
+}
+
+// makes playhead draggable
+playhead.addEventListener('mousedown', mouseDown, false);
+window.addEventListener('mouseup', mouseUp, false);
+
+// Boolean value so that audio position is updated only when the playhead is released
+var onplayhead = false;
+
+// mouseDown EventListener
+function mouseDown() {
+  onplayhead = true;
+  window.addEventListener('mousemove', moveplayhead, true);
+  music.removeEventListener('timeupdate', timeUpdate, false);
+}
+
+// mouseUp EventListener
+// getting input from all mouse clicks
+function mouseUp(event) {
+  if (onplayhead == true) {
+    moveplayhead(event);
+    window.removeEventListener('mousemove', moveplayhead, true);
+    // change current time
+    music.currentTime = duration * clickPercent(event);
+    music.addEventListener('timeupdate', timeUpdate, false);
+  }
+  onplayhead = false;
+}
+// mousemove EventListener
+// Moves playhead as user drags
+function moveplayhead(event) {
+  var newMargLeft = event.clientX - getPosition(timeline);
+
+  if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+    playhead.style.marginLeft = newMargLeft + "px";
+  }
+  if (newMargLeft < 0) {
+    playhead.style.marginLeft = "0px";
+  }
+  if (newMargLeft > timelineWidth) {
+    playhead.style.marginLeft = timelineWidth + "px";
+  }
+}
+
+// timeUpdate
+// Synchronizes playhead position with current point in audio
+function timeUpdate() {
+  var playPercent = timelineWidth * (music.currentTime / duration);
+  playhead.style.marginLeft = playPercent + "px";
+  if (music.currentTime == duration) {
+    pButton.className = "";
+    pButton.className = "play";
+  }
+}
+
+//Play and Pause
+function play() {
+  // start music
+  if (music.paused) {
+    music.play();
+    // remove play, add pause
+    pButton.className = "";
+    pButton.className = "pause";
+  } else { // pause music
+    music.pause();
+    // remove pause, add play
+    pButton.className = "";
+    pButton.className = "play";
+  }
+}
+
+function stop() {
+  music.pause();
+  music.currentTime = 0;
+  pButton.className = "play";
+};
+
+
+// Gets audio file duration
+music.addEventListener("canplaythrough", function() {
+  duration = music.duration;
+}, false);
+
+// getPosition
+// Returns elements left position relative to top-left of viewport
+function getPosition(el) {
+  return el.getBoundingClientRect().left;
+}
+
+/* DOMContentLoaded*/
+
+});
+
+
+</script>
+</body>
+</html>
